@@ -1,0 +1,590 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发现音乐</title>
+    <link rel="stylesheet" href="css/page1.css"/>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+<header>
+	<div class="collapse navbar-collapse">
+		<div class="clear"></div>
+		<div class="loge">
+			<a href="index.html"><img src="img/loge.jpg" /> </a>
+		</div>
+		<ul class="nav nav-tabs header-nav" id="list">
+			<li role="presentation" class="active">
+				<a href="index.html" target="_self">发现音乐</a>
+			</li>
+			<li role="presentation">
+				<a href="charts.html" target="_self">排行榜</a>
+			</li>
+			<li role="presentation">
+				<a href="three.html" target="_self">歌单</a>
+			</li>
+			<li role="presentation">
+				<a href="four.html" target="_self">主播电台</a>
+			</li>
+			<li role="presentation">
+				<a href="singer.html" target="_self">歌手</a>
+			</li>
+			<li role="presentation">
+				<a href="new.html" target="_self">歌碟上架</a>
+			</li>
+			<li role="presentation">
+				<a href="shop.html" target="_self">商城</a>
+			</li>
+		</ul>
+
+
+		<div class="col-sm-2 header-nav" id="so">
+			<div class="input-group">
+				<a href="#"><i class="icon-user"></i></a><input type="text" class="form-control" autofocus="autofocus" />
+			</div>
+		</div>
+		<ul class="nav navbar-nav navbar-right login">
+        <li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+        <li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">再次输入密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+</header>
+<!--头部结束-->
+	
+<!-- banner -->
+<div class="banner" id="banner">
+    <!-- images -->
+    <div class="divImg" id="divImg">
+        <a href="">
+            <div class="images slide1 active"><img src="http://p1.music.126.net/x1-BDEAsrRLDbDjFKLYk_A==/109951163623825668.jpg" /> </div>
+        </a>
+        <a href="">
+            <div class="images slide2"><img src="http://p1.music.126.net/RBwxiHr0N2Xk1mKT2Ihlhg==/109951163622107210.jpg" /></div>
+        </a>
+        <a href="">
+            <div class="images slide3"><img src="http://p1.music.126.net/eutlOcSlh-dtpWq328R6bQ==/109951163615791721.jpg" /></div>
+        </a>
+        <!-- 上一张，下一张按钮 -->
+    <a href="javascript:void(0)" class="button prev" id="prev"></a>
+    <a href="javascript:void(0)" class="button next" id="next"></a>
+    </div>
+    
+    <!-- 圆点按钮 -->
+    <div class="dots" id="dots">
+        <span class="span-active"></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<script src="js/page1.js" type="text/javascript" charset="utf-8"></script>
+
+<audio src="http://music.163.com/song/media/outer/url?id=483671599.mp3" controls="controls" hidden="hidden" preload id="music1"></audio>
+<audio src="http://music.163.com/song/media/outer/url?id=1934649.mp3" controls="controls" hidden="hidden" preload id="music2"></audio>
+<audio src="http://music.163.com/song/media/outer/url?id=33911781.mp3" controls="controls" hidden="hidden" preload id="music3"></audio>
+<audio src="http://music.163.com/song/media/outer/url?id=1293886117.mp3" controls="controls" hidden="hidden" preload id="music4"></audio>
+<audio src="http://music.163.com/song/media/outer/url?id=518686034.mp3" controls="controls" hidden="hidden" preload id="music5"></audio>
+<audio src="http://music.163.com/song/media/outer/url?id=531051713.mp3" controls="controls" hidden="hidden" preload id="music6"></audio>
+<audio src="http://music.163.com/song/media/outer/url?id=571566108.mp3" controls="controls" hidden="hidden" preload id="music7"></audio>
+<audio src="http://music.163.com/song/media/outer/url?id=1318515856.mp3" controls="controls" hidden="hidden" preload id="music8"></audio>
+
+<!--内容开始-->
+<div class="clear"></div>
+<div class="w">
+	<!--<div class="clear></div>-->
+	<!--内容左边-->
+	<div class="content-left">
+		
+	<div class="content-nav">
+	<p class="hot"><a href="#">热门推荐</a></p>
+	<ul class="music-list">
+		<li><a href="#">华语</a></li>
+		<li><span></span></li>
+		<li><a href="#">流行</a></li>
+		<li><span></span></li>
+		<li><a href="#">摇滚</a></li>
+		<li><span></span></li>
+		<li><a href="#">民谣</a></li>
+		<li><span></span></li>
+		<li><a href="#">电子</a></li>
+	</ul>
+	<a href="#" class="more">更多</a>
+	</div>
+
+       <div class="music-list-one">
+       	<div class="gq-item"><img src="http://p2.music.126.net/fF6FUd28RdHva_sHqRUOwg==/109951163607507623.jpg?param=140y140"/>
+       	<p>愿你黑裙齐身 高贵又冷艳</p>
+       	</div>
+       	<div class="music-play music-play1"><a href="javaScript:musicplay();"><i id="bofang"></i></a></div>
+       	
+       	<div class="gq-item"><img src="http://p2.music.126.net/OZm3GaYvubbePecLyHeUXQ==/109951163606870132.jpg?param=140y140"/>
+       	<p>他/她们唱英文歌也如此迷人</p>
+       	</div>
+       	<div class="music-play music-play2"><a href="javaScript:musicplay1()"><i id="bofang1"></i></a></div>
+       	
+       	<div class="gq-item"><img src="http://p2.music.126.net/jCK1XWV6iXLrUHFiv_3OXQ==/109951163577071846.jpg?param=140y140"/>
+       	<p>「纯音乐」戴上耳机整个世界都属于你</p>
+       	</div>
+       	<div class="music-play music-play3"><a href="javaScript:musicplay2()"><i id="bofang2"></i></a></div>
+       	
+       	<div class="gq-item"><img src="http://p1.music.126.net/Nw3YO67Ah_TG7ZaoaGeO5w==/109951163610779559.jpg?param=140y140"/>
+       	<p>那些年，我们听过，哥哥的歌 第五篇《一片痴》</p>
+       	</div>
+        <div class="music-play music-play4"><a href="javaScript:musicplay3()"><i id="bofang3"></i></a></div>
+        
+       </div>
+       
+       <div class="music-list-one">
+       	<div class="gq-item"><img src="http://p2.music.126.net/6dRG-xIPX5KO89ZIh7QEAg==/109951163509655275.jpg?param=140y140"/>
+       	<p>如何用手机铃声惊艳四座？ 真惊艳篇</p>
+       	</div>
+       	<div class="music-play music-play1"><a href="javaScript:musicplay4()"><i id="bofang4"></i></a></div>
+       	
+       	<div class="gq-item"><img src="http://p1.music.126.net/OHEjFiIVCCngQcxR9ShLeg==/109951163598335035.jpg?param=140y140"/>
+       	<p>w开头的英文名有木有你稀罕的呢？</p>
+       	</div>
+       	<div class="music-play music-play2"><a href="javaScript:musicplay5()"><i id="bofang5"></i></a></div>
+       	
+       	<div class="gq-item"><img src="http://p2.music.126.net/iWruXYhoZVdVQEn58t3M2A==/19140298416950682.jpg?param=140y140"/>
+       	<p>日语｜想找一个天真活泼可爱的女朋友</p>
+       	</div>
+       	<div class="music-play music-play3"><a href="javaScript:musicplay6()"><i id="bofang6"></i></a></div>
+       	
+       	<div class="gq-item"><img src="http://p1.music.126.net/GQy7sglrPCKuJ5AZR3UmLw==/109951163618319775.jpg?param=140y140"/>
+       	<p> 我今年20多岁，没有面包也没有爱情。</p>
+       	</div>
+        <div class="music-play music-play4"><a href="javaScript:musicplay7()"><i id="bofang7"></i></a></div>
+        
+       </div>
+       
+       
+       
+       
+    <div class="content-nav">
+	<p class="hot"><a href="#">新碟上架</a></p>
+	<a href="#" class="more">更多</a>
+	</div>
+
+       <div class="music-list-one new-music">
+       	<div class="gq-item">
+       		<a href="#">
+       			<img src="http://p4.music.126.net/1_0T60oErqK3wZdMEjBbAg==/109951163609839359.jpg?param=140y140"/>
+       			<p>破坏王</p>
+       		</a>
+       		<a href="#">
+       	<em>陈奕迅</em>
+       		</a>
+       	</div>
+       	<div class="music-play music-play1"><a href="javaScript:void(0)"><i></i></a></div>
+       	<div class="gq-item">
+       		<a href="#">
+       		<img src="http://p3.music.126.net/7u7t1-uEhd3bvSncd9fpsg==/109951163599182962.jpg?param=140y140"/>
+       	<p>Porch Songs</p>
+       	</a>
+       	<a href="#">
+       	<em>Rachael Yamagata</em>
+       	</a>
+       	</div>
+       	<div class="music-play music-play2"><a href="javaScript:void(0)"><i></i></a></div>
+       	<div class="gq-item">
+       		<a href="#">
+       		<img src="http://p4.music.126.net/tt8xwK-ASC2iqXNUXYKoDQ==/109951163606377163.jpg?param=140y140"/>
+       	<p>耳朵</p>
+       	</a>
+       	<a href="#">
+       	<em>李荣浩</em>
+       	</a>
+       	</div>
+       	<div class="music-play music-play3"><a href="javaScript:void(0)"><i></i></a></div>
+       	<div class="gq-item">
+       		<a href="#">
+       		<img src="http://p4.music.126.net/mESDcFxTUezXk83Q6jJNdA==/109951163611604497.jpg?param=140y140"/>
+       	<p>新大陆</p>
+       	</a>
+       	<a href="#">
+       	<em>布瑞吉Bridge</em>
+       	</a>
+       	</div>
+        <div class="music-play music-play4"><a href="javaScript:void(0)"><i></i></a></div>
+       </div>
+    
+
+
+
+		<div class="content-nav">
+			<p class="hot"><a href="#">榜单</a></p>
+			<a href="#" class="more">更多</a>
+			</div>
+
+       <div class="music-list-two">
+       <div class="gq-item2">
+       	<div class="list-img">
+       	<img src="http://p4.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100"/>
+       	<a href="#">
+       	<p>飙升榜</p>
+       	</a>
+       	</div>
+       	
+       	<ul class="hot-list">
+       		<li><a href="">1:扑朔迷离 (跑得快)</a>
+       			<a href="#"><i></i></a>
+       		</li>
+       		<li><a href="">2:君のうた</a>
+       			<a href="#"><i></i>
+       				
+       			</a>
+       		</li>
+       		<li><a href="">3:即刻启程</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">4:삐삐</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">5:HOPE</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">6:Money</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">7:东西</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">8:Pure</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">9:Love Song</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">10:1941. 2018 CYPHER</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       	</ul>
+  <a href="#"><p class="more">更多</p></a>
+       </div>
+       	
+       	<div class="gq-item2">
+       			<div class="list-img">
+       		<img src="http://p4.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=100y100"/>
+       	<a href="#">
+       	<p>新歌榜</p>
+       	</a>
+       	</div>
+       	
+       	<ul class="hot-list">
+       		<li><a href="">1:扑朔迷离 (跑得快)</a>
+       			<a href="#"><i></i></a>
+       		</li>
+       		<li><a href="">2:君のうた</a>
+       			<a href="#"><i></i>
+       				
+       			</a>
+       		</li>
+       		<li><a href="">3:即刻启程</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">4:삐삐</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">5:HOPE</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">6:Money</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">7:东西</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">8:Pure</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">9:Love Song</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">10:1941. 2018 CYPHER</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       	</ul>
+       	<a href="#"><p class="more">更多</p></a>
+       	</div>
+       	
+       <div class="gq-item2">
+       	
+       	<div class="list-img">
+       	<img src="http://p3.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=100y100"/>
+       	<a href="#">
+       	<p>原创歌曲榜</p>
+       	</a>
+       	</div>
+       	<ul class="hot-list">
+       		<li><a href="">1:扑朔迷离 (跑得快)</a>
+       			<a href="#"><i></i></a>
+       		</li>
+       		<li><a href="">2:君のうた</a>
+       			<a href="#"><i></i>
+       				
+       			</a>
+       		</li>
+       		<li><a href="">3:即刻启程</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">4:삐삐</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">5:HOPE</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">6:Money</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">7:东西</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">8:Pure</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">9:Love Song</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">10:1941. 2018 CYPHER</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       	</ul>
+       	<a href="#"><p class="more">更多</p></a>
+       	
+       	
+       	</div>
+       	
+    
+
+	<!--<div class="clear></div>-->
+	
+	</div>
+	
+</div>
+
+<div class="content-right">
+		<div class="use-login">
+			<p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+			<button data-toggle="modal" data-target="#login">登录</button>
+		</div>
+		<div class="singer">
+			<p class="singer-come">入驻歌手</p>
+			<a href="#" class="more">更多</a>
+			<div class="singer-item">
+				<img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" />
+			 	<p>张惠妹</p>
+			 	<p>台湾歌手</p>
+			</div>
+			<div class="singer-item">
+				<img src="http://p1.music.126.net/1EN_iqQWU_E3DafzEOh3cA==/3302932937408956.jpg?param=62y62" />
+			 	<p>Fine乐团</p>
+			 	<p>独立音乐人</p>
+			</div>
+			<div class="singer-item">
+				<img src="http://p1.music.126.net/v_zYgE9kmAwVGWV2c8hFxA==/7943971513291094.jpg?param=62y62" />
+			 	<p>音乐人赵雷</p>
+			 	<p>民谣歌手</p>
+			</div>
+			<div class="singer-item">
+				<img src="http://p1.music.126.net/ZuktZvjcxpYBjcWC3gmbPg==/19027048718765608.jpg?param=62y62" />
+			 	<p>万晓利</p>
+			 	<p>民谣歌手</p>
+			</div>
+			<div class="singer-item">
+				<img src="http://p1.music.126.net/U-duMw2-FE0wNRsuwGktPw==/109951162895674268.jpg?param=62y62" />
+			 	<p>王三博</p>
+			 	<p>音乐人</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="clear"></div>
+	
+	
+	
+	<!--尾部开始-->
+	<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5">
+						<div class="nav footerLeft">
+							<div class="copy">
+								<p class="link">
+									<a href="">关于橙子</a>
+									<span class="line">|</span>
+									<a href="">客户服务</a>
+									<span class="line">|</span>
+									<a href="">服务条款</a>
+									<span class="line">|</span>
+									<a href="">网站导航</a>
+									<span class="line">|</span>
+									<a href="">意见反馈</a>
+								</p>
+								<p class="font">
+									<span>网易公司版权所有©1997-2018</span>
+									<span>杭州乐读科技有限公司运营：</span>
+									<a>浙网文[2018]3506-263号</a>
+								</p>
+								<p class="font">
+									<span>违法和不良信息举报电话：0571-89853516</span>
+									<span>举报邮箱：</span>
+									<a>cloudmusicservice@163.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="nav footerRight">
+							<ul class="list">
+								<li>
+									<a href="">
+										<img src="img/cz01.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz02.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz03.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz04.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz05.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</footer>
+	
+	
+	
+	
+
+</body>
+</html>

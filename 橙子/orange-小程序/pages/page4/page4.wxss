@@ -1,0 +1,102 @@
+/* pages/page4/page4.wxss */
+
+.allPage {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+/* top部分 */
+.top{
+  width: 100%;
+  height: 90rpx;
+  /* background-color: yellow; */
+}
+.top image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+}
+.top-1{
+  margin-left: 240rpx;
+}
+.top-2{
+  margin-left: 120rpx;
+}
+.top-3{
+  margin-left: 200rpx;
+}
+.top-title{
+  width: 100%;
+  height: 70rpx;
+  font-size: 28rpx;
+}
+.title-1{
+  margin-left: 220rpx;
+  color: white;
+}
+.title-2 {
+  margin-left: 86rpx;
+  color: #515151;
+}
+
+/* middle-img部分 */
+.middle-img{
+  width: 600rpx;
+  height: 600rpx;
+  margin-left: 75rpx;
+}
+.middle-img image{
+  width: 600rpx;
+  height: 600rpx;
+  border-radius: 10rpx;
+}
+
+/* musciInfo部分 */
+.musicInfo{
+  width: 100%;
+  height: 130rpx;
+  margin: 50rpx 0;
+  /* background-color: palevioletred; */
+  text-align: center;
+}
+.musicInfo-1{
+  color: white;
+  line-height: 70rpx;
+}
+.musicInfo-2{
+  color: #515151;
+  font-size: 28rpx;
+}
+
+/* 进度条部分 */
+.prog{
+  width: 510rpx;
+  margin: 0 15rpx;
+}
+.t{
+  font-size: 24rpx;
+  color: gainsboro;
+}
+.t,.prog{
+  display: inline-block;
+}
+.time1{
+  margin-left: 45rpx;
+}
+
+/* footer部分 */
+.footer{
+  margin-top: 65rpx;
+  width: 100%;
+  height: 100rpx;
+}
+.footer view{
+  display: inline-block;
+  width: 150rpx;
+  text-align: center;
+}
+.footer view image {
+  width: 60rpx;
+  height: 60rpx;
+}

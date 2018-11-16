@@ -1,0 +1,222 @@
+<!--pages/page1/page1.wxml-->
+<view class='header'>
+  <view class='hea header-1'>
+    <image src='../../icon1/cd.png'></image>
+  </view>
+  <view class='hea header-2'>
+    <image bindtap='yyyy' src='../../icon1/yyyy.png'></image>
+  </view>
+  <view class='hea header-3'>
+    <image src='../../icon1/c.png'></image>
+  </view>
+  <view class='hea header-4'>
+    <image src='../../icon1/bbff.png'></image>
+  </view>
+  <icon class='hea header-5' type='search' color='white' size='24'></icon>
+
+  <view class='top-nav'>
+    <text>推荐</text>
+    <text bindtap='pengyou'>朋友</text>
+    <text bindtap='diantai'>电台</text>
+    <view></view>
+  </view>
+</view>
+
+<view>
+  <view class='bj'></view>
+  <swiper autoplay='true' indicator-dots='true' indicator-active-color='orangered' circular='true' class='top-swiper'>
+    <swiper-item>
+      <image src='http://p1.music.126.net/ulW4yJjxB8eAvInYOobNLg==/109951163621926009.jpg'>
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://p1.music.126.net/LKytjNHMEtWjJAYyIg1aqw==/109951163623075570.jpg'>
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://p1.music.126.net/zOJerZ94LK17jRRNEkuhdA==/109951163621919441.jpg'>
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://p1.music.126.net/eutlOcSlh-dtpWq328R6bQ==/109951163615791721.jpg'>
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://p1.music.126.net/fklp8j8RXOys1RyEbC00iA==/109951163621954602.jpg'>
+      </image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='middle-nav'>
+  <view class='nav-1' bindtap='fm'>
+    <view class='nav-1-top'>
+      <image src='../../icon1/dt.png'></image>
+    </view>
+    <text>私人FM</text>
+  </view>
+  <view class='nav-1'>
+    <view class='nav-1-top'>
+      <image src='../../icon1/tj.png'></image>
+    </view>
+    <text>每日推荐</text>
+  </view>
+  <view class='nav-1'>
+    <view class='nav-1-top'>
+      <image src='../../icon1/qd.png'></image>
+    </view>
+    <text>歌单</text>
+  </view>
+  <view class='nav-1'>
+    <view class='nav-1-top'>
+      <image src='../../icon1/ph.png'></image>
+    </view>
+    <text>排行榜</text>
+  </view>
+</view>
+
+<view class='recList'>
+  <view class='recList-title'>
+    <text>推荐歌单</text>
+    <text class='recList-title-2'>></text>
+  </view> 
+  <view class='recList-show'>
+    <view class='recList-show-1'>
+      <image src='http://p3.music.126.net/QXsKP4U8F0cxydk39j5NQQ==/109951163521816626.jpg?param=200y200'></image>
+      <text>Trance｜异域谜声，万物连通。</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p3.music.126.net/EHXPEIPoq9VbrUm5w58pKA==/109951163612111177.jpg?param=200y200'></image>
+      <text>万次评论只为这个旋律</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p2.music.126.net/uwMIZzF6O-J_zqRixlPCiA==/109951162834753404.jpg?param=140y140'></image>
+      <text>华语民谣|止于唇齿，掩于岁月</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p3.music.126.net/DNucTq_jUc-maZeD7RCJVw==/109951163594594622.jpg?param=200y200'></image>
+      <text>愿山野浓雾都有路灯 风雨漂泊都有归舟</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p4.music.126.net/Cl0-NpZ0ESTDjJ1HmZ33KA==/109951163460576279.jpg?param=200y200'></image>
+      <text>100首华语民谣，因为懂得才有共鸣</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p3.music.126.net/SEEvl3AmA48Cj4KzlXV34g==/109951163554181124.jpg?param=200y200'></image>
+      <text>孤独患者：我们听的是歌还是自己</text>
+    </view>
+  </view>
+</view>
+
+<view class='recList'>
+  <view class='recList-title'>
+    <text>最新音乐</text>
+    <text class='recList-title-2'>></text>
+  </view> 
+  <view class='recList-show'>
+    <view class='recList-show-1'>
+      <image src='http://p3.music.126.net/QXsKP4U8F0cxydk39j5NQQ==/109951163521816626.jpg?param=200y200'></image>
+      <text>Trance｜异域谜声，万物连通。</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p3.music.126.net/EHXPEIPoq9VbrUm5w58pKA==/109951163612111177.jpg?param=200y200'></image>
+      <text>万次评论只为这个旋律</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p2.music.126.net/uwMIZzF6O-J_zqRixlPCiA==/109951162834753404.jpg?param=140y140'></image>
+      <text>华语民谣|止于唇齿，掩于岁月</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p3.music.126.net/DNucTq_jUc-maZeD7RCJVw==/109951163594594622.jpg?param=200y200'></image>
+      <text>愿山野浓雾都有路灯 风雨漂泊都有归舟</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p4.music.126.net/Cl0-NpZ0ESTDjJ1HmZ33KA==/109951163460576279.jpg?param=200y200'></image>
+      <text>100首华语民谣，因为懂得才有共鸣</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p3.music.126.net/SEEvl3AmA48Cj4KzlXV34g==/109951163554181124.jpg?param=200y200'></image>
+      <text>孤独患者：我们听的是歌还是自己</text>
+    </view>
+  </view>
+</view>
+
+<view class='vipZone'>
+  <view class='vipZone-title'>
+    <text>会员专区</text>
+  </view> 
+
+    <swiper circular='true' previous-margin='50rpx' next-margin='50rpx' class='vipZone-swiper'>
+      <swiper-item>
+        <image src='http://p1.music.126.net/RBwxiHr0N2Xk1mKT2Ihlhg==/109951163622107210.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='http://p1.music.126.net/x1-BDEAsrRLDbDjFKLYk_A==/109951163623825668.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='http://p1.music.126.net/wRddvJjiWrX8PpVbGveyLg==/109951163623835262.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='http://p1.music.126.net/ozXmcaE7tT_9SuJ0V-DGTg==/109951163623827776.jpg'></image>
+      </swiper-item>
+    </swiper>
+
+  <view class='vipZone-bottom'>
+    <button>进入会员中心></button>
+  </view>
+</view>
+
+<view class='list-bg'>
+<view class='list'>
+  <view class='list-top'>
+    <view class='headImg'>
+      <image src='https://img03.sogoucdn.com/app/a/100520093/135af7683914878b-0429e3faa7dc75a3-dec813deb352cc0e4941bb54372fde34.jpg'></image>
+    </view>
+    <view class='list-top-text'>
+      <view class='clear'></view>
+      <text class='user userName'>xxx</text>
+      <view class='user userClock'>
+        <image src='../../icon2/qd.png'></image>
+        <text>签到</text>
+      </view>
+      <view class='clear'></view>
+    </view>
+  </view>
+  <scroll-view scroll-y='true'>
+    <view>
+      <view>
+        <image src='../../icon2/xx.png'></image>
+        <text>我的消息</text>
+      </view>
+      <view>
+        <image src='../../icon2/vip.png'></image>
+        <text>会员中心</text>
+      </view>
+      <view>
+        <image src='../../icon2/sc.png'></image>
+        <text>商城</text>
+      </view>
+      <view>
+        <image src='../../icon2/yx.png'></image>
+        <text>游戏推荐Beat</text>
+      </view>
+      <view>
+        <image src='../../icon2/zx.png'></image>
+        <text>在线听歌免流量</text>
+      </view>
+    </view>
+    <view></view>
+    <view></view>
+  </scroll-view>
+</view>
+</view>

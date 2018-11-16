@@ -1,0 +1,77 @@
+.t26{
+  width:90rpx;
+  height: 65rpx;
+  position: relative;
+  left: 545rpx;
+  top: 16rpx;
+}
+.title{
+  height: 80rpx;
+  background-color: #343318
+}
+.t25{
+  width: 100%;
+  height: 515rpx;
+}
+.ge{
+  margin-left: 20rpx;
+  color: white
+}
+.title1{
+  height: 60rpx;
+border-bottom: 1px solid rgb(240, 238, 238);
+}
+.title1 image{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+ left: 20rpx;
+
+}
+.bo{
+  font-size: 30rpx;
+  margin-left: 43rpx;
+  position: relative;
+  top: -10rpx;
+}
+.duo{
+  color: lightgrey;
+  font-size: 30rpx;
+  margin-left: 400rpx;
+   position: relative;
+  top: -10rpx;
+}
+
+.title2 image{
+width:75rpx;
+height: 40rpx;
+position: relative;
+left: -117rpx;
+top: 65rpx;
+
+}
+.big{
+  font-size: 35rpx;
+position: relative;
+top: 10rpx;
+left: 20rpx;
+
+}
+
+.small{
+   font-size: 27rpx;
+position: relative;
+top: 52rpx;
+left: -113rpx;
+}
+.title2{
+  height: 120rpx;
+  border-bottom: 1px solid rgb(240, 238, 238);
+
+}
+#img{
+width: 25rpx;
+position: relative;
+left: 119rpx;
+top :43rpx;
+}

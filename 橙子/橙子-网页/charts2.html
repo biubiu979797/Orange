@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>排行榜</title>
+		<link rel="stylesheet" type="text/css" href="css/charts.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	    <link rel="stylesheet" type="text/css" href="css/header.css" />
+	    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	    <script type="text/javascript" src="js/bootstrap.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/foot.css"/>
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--头部开始-->
+<header>
+	<div class="collapse navbar-collapse">
+		<div class="clear"></div>
+		<div class="loge">
+			<a href="index.html"><img src="img/loge.jpg" /> </a>
+		</div>
+		<ul class="nav nav-tabs header-nav" id="list">
+			<li role="presentation" id="index">
+				<a href="index.html" target="_self">发现音乐</a>
+			</li>
+			<li role="presentation" id="index1"  class="active">
+				<a href="charts.html" target="_self">排行榜</a>
+			</li>
+			<li role="presentation" id="index2">
+				<a href="three.html" target="_self">歌单</a>
+			</li>
+			<li role="presentation" id="index3">
+				<a href="four.html" target="_self">主播电台</a>
+			</li>
+			<li role="presentation" id="index4">
+				<a href="singer.html" target="_self">歌手</a>
+			</li>
+			<li role="presentation" id="index5">
+				<a href="new.html" target="_self">歌碟上架</a>
+			</li>
+			<li role="presentation">
+				<a href="shop.html" target="_self">商城</a>
+			</li>
+		</ul>
+
+
+		<div class="col-sm-2 header-nav" id="so">
+			<div class="input-group">
+				<a href="#"><i class="icon-user"></i></a><input type="text" class="form-control" autofocus="autofocus" />
+
+			</div>
+		</div>
+		<ul class="nav navbar-nav navbar-right login">
+        <li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+        <li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">再次输入密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+</header>
+<!--头部结束-->
+		
+		
+		
+		
+		<div class="clear"></div>
+		<div class="content1 w">
+		<div class="content-left">
+			<p class="characteristic">特色榜</p>
+			<a href="charts.html">
+			<div class="characteristic-item">
+				<img src="http://p1.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=40y40" />
+			 	<p>音乐飙升榜</p>
+			 	</div>
+			 	</a>
+			<a href="charts1.html">
+			<div class="characteristic-item">
+				<img src="http://p1.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=40y40" />
+			 	<p>音乐新歌榜</p>
+			</div>
+			</a>
+			<a href="charts2.html">
+			<div class="characteristic-item characteristic-item1">
+				<img src="http://p2.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=40y40" />
+			 	<p>原创歌曲榜</p>
+			</div>
+			</a>
+		
+			<a href="charts3.html">
+			<div class="characteristic-item">
+				<img src="http://p1.music.126.net/GhhuF6Ep5Tq9IEvLsyCN7w==/18708190348409091.jpg?param=40y40" />
+			 	<p>热歌榜</p>
+			</div>
+			</a>
+			
+		</div>
+		
+		
+		<div class="content-right">
+			<div class="clear"></div>
+			<img src="http://p2.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=150y150" />
+			<div class="soaring">
+				<p>橙子音乐原创歌曲榜</p>
+				<audio src="http://music.163.com/song/media/outer/url?id=483671599.mp3" controls="controls" hidden="hidden" preload id="music1"></audio>
+				<a href="JavaScript:musicplay()"><button id="bofang">播放</button></a>
+				<button>收藏</button>
+				<button>转发</button>
+				<button>下载</button>
+				<button>评论</button>
+			</div>
+			<div class="clear"></div>
+			<div class="gq">
+				<p class="gq-p">歌曲列表：</p>
+			<ul class="hot-list">
+       		<li><a href="">1:扑朔迷离 (跑得快)</a>
+       			<a href="#"><i></i></a>
+       		</li>
+       		<li><a href="">2:君のうた</a>
+       			<a href="#"><i></i>
+       				
+       			</a>
+       		</li>
+       		<li><a href="">3:即刻启程</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">4:삐삐</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">5:HOPE</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">6:Money</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">7:东西</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">8:Pure</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">9:Love Song</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">10:1941. 2018 CYPHER</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		
+       		<li><a href="">11:扑朔迷离 (跑得快)</a>
+       			<a href="#"><i></i></a>
+       		</li>
+       		<li><a href="">12:君のうた</a>
+       			<a href="#"><i></i>
+       				
+       			</a>
+       		</li>
+       		<li><a href="">13:即刻启程</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">14:삐삐</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">15:HOPE</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">16:Money</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">17:东西</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">18:Pure</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">19:Love Song</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       		<li><a href="">20:1941. 2018 CYPHER</a>
+       			<a href="#"><i></i>
+       			</a>
+       		</li>
+       	
+       	</ul>
+       	
+       	<div class="comment">
+				<p class="comment-p">评论</p>
+		</div>
+		<div class="comment-content">
+			<img src="http://s4.music.126.net/style/web2/img/default/default_avatar.jpg?param=50y50"/>
+			<input type="text"  placeholder="评论"/>
+			<div class="send">
+				<i></i>
+				<button id="send">发送</button>
+			</div>
+		</div>
+			<div class="clear"></div>
+			<div id="send-content">
+				<div id="send-content1">
+					
+				</div>
+			</div>
+			
+			
+			<script src="js/charts_data.js" type="text/javascript" charset="utf-8"></script>
+			
+			<script type="text/javascript">
+				console.log(charts_data);
+				var content=document.getElementById("send-content1");
+				var content1=document.getElementById("send-content");
+
+				
+				for(var i=0;i<charts_data.hotComments.length;i++){
+//					img.src=charts_data.hotComments[i].user.avatarUrl;
+//					nickname=charts_data.hotComments[i].user.nickname;
+//					txt=charts_data.hotComments[i].content;
+				var img=document.createElement("img");
+				var name1=document.createElement("p");
+				var txt=document.createElement("p");
+				img.classList.add('imgs');
+				name1.classList.add('name');
+				txt.classList.add('txt');
+                  var src=charts_data.hotComments[i].user.avatarUrl;
+                  var nickname=document.createTextNode(charts_data.hotComments[i].user.nickname);
+                  var txt1=document.createTextNode(charts_data.hotComments[i].content);
+                  img.src=src;
+                  name1.appendChild(nickname);
+                  txt.appendChild(txt1);
+                  content.appendChild(img);
+                  content.appendChild(name1);
+                  content.appendChild(txt);
+                  content1.appendChild(content);
+				}
+				
+				var send=document.getElementById("send");
+				send.addEventListener('click',function(){
+					alert('请先登录')
+					},false);
+			</script>
+		
+			</div>
+			
+		</div>
+		</div>
+		<div class="clear"></div>
+		
+		<!--尾部开始-->
+	<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5">
+						<div class="nav footerLeft">
+							<div class="copy">
+								<p class="link">
+									<a href="">关于橙子</a>
+									<span class="line">|</span>
+									<a href="">客户服务</a>
+									<span class="line">|</span>
+									<a href="">服务条款</a>
+									<span class="line">|</span>
+									<a href="">网站导航</a>
+									<span class="line">|</span>
+									<a href="">意见反馈</a>
+								</p>
+								<p class="font">
+									<span>网易公司版权所有©1997-2018</span>
+									<span>杭州乐读科技有限公司运营：</span>
+									<a>浙网文[2018]3506-263号</a>
+								</p>
+								<p class="font">
+									<span>违法和不良信息举报电话：0571-89853516</span>
+									<span>举报邮箱：</span>
+									<a>cloudmusicservice@163.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="nav footerRight">
+							<ul class="list">
+								<li>
+									<a href="">
+										<img src="img/cz01.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz02.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz03.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz04.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz05.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</footer>
+	</body>
+</html>

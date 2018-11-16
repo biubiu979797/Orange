@@ -1,0 +1,44 @@
+<!--pages/page4/page4.wxml-->
+<view class='allPage'>
+<view class='top'>
+  <image class='top-1' src='../../icon1/dt.png'></image>
+  <image class='top-2' src='../../icon1/run.png'></image>
+  <image class='top-3' src='../../icon1/gd.png'></image>
+</view>
+<view class='top-title'>
+  <text class='title-1'>私人FM</text>
+  <text class='title-2'>跑步FM</text>
+</view>
+
+
+<view class='middle-img'>
+  <image src='http://p2.music.126.net/rZjcG9Csby8KPNkWifeAdg==/109951163025427756.jpg?param=130y130'></image>
+</view>
+
+<view class='musicInfo'>
+  <view class='musicInfo-1'>Rearrange</view>
+  <view class='musicInfo-2'>Ella Vos ></view>
+</view>
+
+<view class='t time1'>00:00</view>
+<progress class='prog' stroke-width='3' activeColor='red'></progress>
+<view class='t time2'>04:23</view>
+
+<view class='footer'>
+  <view>
+    <image src='../../icon1/sc.png'></image>
+  </view>
+  <view bindtap='isLike'>
+    <image src='{{imgPath1}}'></image>
+  </view>
+  <view bindtap='isPlay'>
+    <image src='{{imgPath}}'></image>
+  </view>
+  <view>
+    <image src='../../icon1/next.png'></image>
+  </view>
+  <view>
+    <image src='../../icon1/pl1.png'></image>
+  </view>
+</view>
+</view>

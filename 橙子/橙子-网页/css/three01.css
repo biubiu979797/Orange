@@ -1,0 +1,287 @@
+* {
+	margin: 0px;
+	padding: 0;
+}
+.musicList {
+	width: 100%;
+	background: #F5F5F5;
+}
+.musicList .container {
+	min-height: 1266px;
+	display: flex;
+	/*background: orangered;*/
+}
+.musicList .listContent {
+	width: 1033px;
+	background: white;
+	border-top: 1px solid #D3D3D3;
+	border-left: 1px solid #D3D3D3;
+	border-right: 1px solid #D3D3D3;
+	margin-left: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.listContent1_left {
+	width: 644px;
+	height: 200px;
+	/*background: blue;*/
+	margin-left: 74px;
+}
+
+.listLeft_nav {
+	height: 215px;
+	margin-top: 43px;
+	display: flex;
+	justify-content: space-between;
+}
+.listLeft_nav .navImg {
+	width: 208px;
+	height: 208px;
+	border: 1px solid #D3D3D3;
+	text-align: center;
+}
+.navContent1 {
+	display: flex;
+}
+.navContent1 span {
+	display: block;
+	width: 52px;
+	height: 24px;
+	color: white;
+	background: orangered;
+	border-bottom-right-radius:17px ;
+	text-align: center;
+}
+.navContent1 h3 {
+	margin-left: 5px;
+	margin-top: -1px;
+}
+.navContent2 {
+	margin-top: 5px;
+}
+.navContent2 #start {
+	color: orangered;
+}
+.navContent2 #listfont {
+	color:#DCDCDC;
+}
+.navContent3 {
+	margin-top: 15px;
+}
+.navContent3 span {
+	display: inline-block;
+}
+.navContent3 .play span {
+	width: 63px;
+	height: 30px;
+	background: #3C8BD6;
+	border-bottom-left-radius:8px ;
+	border-top-left-radius:8px ;
+	text-align: center;
+	line-height: 30px;
+	border-right: 1px solid #D3D3D3;
+	color: white;
+}
+.navContent3 .add span {
+	width: 32px;
+	height: 30px;
+	background: #3C8BD6;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-left: -3px;
+	border-bottom-right-radius:8px ;
+	border-top-right-radius:8px ;
+}
+.navContent4 {
+	color:#808080;
+	margin-top: 15px;
+}
+.navContent4 a {
+	display: inline-block;
+	width: 50px;
+	height: 25;
+	background: #D3D3D3;
+	color: #808080;
+	border: 1px solid #D1D1D1;
+	text-align: center;
+	border-radius: 20px;
+	text-decoration: none;
+}
+.navContent4 a:hover {
+	background:#F5F5F5 ;
+}
+.playlist_nav {
+	height: 54px;
+	display: flex;
+	justify-content: space-between;e
+}
+.playlist_nav1 .font2 {
+	margin-left: 122px;
+	margin-top: -33px;
+}
+.playlist_nav2 {
+	width: 238px;
+	margin-top: 26px;
+}
+.playlist_nav2 p {
+	margin-top:-19px ;
+	margin-left: 133px;
+}
+.playlist_nav2 .num {
+	color: orangered;
+}
+.playlist {
+	min-height: 500px;
+	border-top: 1px solid orangered;
+	border-left: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+	border-right: 1px solid #D9D9D9;
+	margin-bottom: 20px;
+}
+.listRight_nav {
+	margin-top: 10px;
+}
+.playlist_content1 {
+	height: 38px;
+	background: #F5F5F5;
+	line-height: 38px;
+}
+.playlist_content1 span {
+	display: inline-block;
+}
+
+.playlist_content1 .font {
+	width: 75px;
+	height: 38px;
+	background: #F5F5F5 ;
+	border-right: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+}
+.playlist_content1 .font1 {
+	width: 238px;
+	height: 38px;
+	background: #F5F5F5 ;
+	border-right: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+}
+.playlist_content1 .font2 {
+	width: 90px;
+	height: 38px;
+	background: #F5F5F5 ;
+	border-right: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+}
+.playlist_content1 .font3 {
+	width: 90px;
+	height: 38px;
+	background: #F5F5F5 ;
+	border-right: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+}
+.playlist_content1 .font4 {
+	width: 133px;
+	border-bottom: 1px solid #D9D9D9;
+}
+
+.playlist_content2 {
+	height: 38px;
+	background: #F7F7F7;
+	line-height: 38px;
+	display: flex;
+	justify-content: space-between;
+}
+/*.playlist_content2 span {
+	margin-left: 10px;
+}*/
+.playlist_content2 a,.playlist_content3 a {
+	display: inline-block;
+	color: #ACACAC;
+	text-decoration: none;
+}
+
+.playlist_content2 .font,.playlist_content3 .font {
+	width: 75px;
+	height: 38px;
+	color: #D9D9D9;
+}
+.playlist_content2 .font #icon,.playlist_content3 .font #icon {
+	margin-left: 10px;
+	color: #ACACAC;
+}
+.playlist_content2 .font1,.playlist_content3 .font1 {
+	width: 238px;
+	height: 38px;
+	margin-right: 1px;
+}
+.playlist_content2 .font2,.playlist_content3 .font2 {
+	width: 90px;
+	height: 38px;
+}
+.playlist_content2 .font3,.playlist_content3 .font3 {
+	width: 90px;
+	height: 38px;
+
+}
+.playlist_content3 {
+	height: 38px;
+	background: white;
+	line-height: 38px;
+	display: flex;
+	justify-content: space-between;
+}
+/*歌单左边部分结束*/
+
+
+/*歌单右边部分开始*/
+
+/*头部开始*/
+.listContent1_rigth {
+	width: 272px;
+	min-height: 1000px;
+	border-left: 1px solid #D3D3D3;
+}
+.listRight {
+	width: 232px;
+	height: 300px;
+	margin-left: 25px;
+	margin-right: 35px;
+}
+/*头部结束*/
+
+.listRight_img {
+	height: 120px;
+	border-top: 1px solid #D3D3D3;
+}
+.listRight_img1 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.hotlistbox {
+	height: 342px;
+	border-top: 1px solid #D3D3D3;
+}
+.hotlist_content {
+	margin-top: 20px;
+}
+.hotlist_content .font1,.hotlist_content .font1:hover {
+	color: #000000;
+}
+.hotlist_content .font1 {
+	margin-top: -5px;
+}
+.hotlistbox .font2 {
+	color: #666666;
+}
+.hotlistbox .font {
+	margin-left: 70px;
+	margin-top: -44px;
+}
+.hotlistbox #font3 {
+	color: orangered;
+}
+
+
+
+/*歌单右边部分开始*/

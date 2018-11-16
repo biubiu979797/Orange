@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主播电台</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/four.css" />
+		<script type="text/javascript" src="js/four.js" ></script>
+		<link rel="stylesheet" href="css/foot.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!--头部开始-->
+		<header>
+			<div class="collapse navbar-collapse">
+				<div class="clear"></div>
+				<div class="loge">
+					<a href="index.html"><img src="img/loge.jpg" /> </a>
+				</div>
+				<ul class="nav nav-tabs header-nav" id="list">
+					<li role="presentation">
+						<a href="index.html" aria-controls="home" role="tab" data-toggle="tab" target="_self">发现音乐</a>
+					</li>
+					<li role="presentation">
+						<a href="charts.html" aria-controls="排行榜" role="tab" data-toggle="tab" target="_self">排行榜</a>
+					</li>
+					<li role="presentation">
+						<a href="three.html" aria-controls="歌单" role="tab" data-toggle="tab" target="_self">歌单</a>
+					</li>
+					<li role="presentation" class="active">
+						<a href="foot.html" aria-controls="主播电台" role="tab" data-toggle="tab" target="_self">主播电台</a>
+					</li>
+					<li role="presentation">
+						<a href="singer.html" aria-controls="歌手" role="tab" data-toggle="tab" target="_self">歌手</a>
+					</li>
+					<li role="presentation">
+						<a href="new.html" aria-controls="歌碟上架" role="tab" data-toggle="tab" target="_self">歌碟上架</a>
+					</li>
+					<li role="presentation">
+						<a href="shop.html" target="_self">商城</a>
+					</li>
+				</ul>
+				
+				
+			
+
+				<div class="col-sm-2 header-nav" id="so">
+					<div class="input-group">
+						<a href="#"><i class="icon-user"></i></a><input type="text" class="form-control" autofocus="autofocus" />
+
+					</div>
+				</div>
+				<ul class="nav navbar-nav navbar-right login">
+        <li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+        <li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">再次输入密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+			
+		</header>
+		<!--头部结束-->
+		
+		<div class="radio">
+			<div class="container">
+				<div class="contentBox">
+					<div class="arrow">
+						<a>
+							<span id="arrow_left" class="glyphicon glyphicon-menu-left"></span>
+						</a>
+						<a>
+							<span id="arrow_right" class="glyphicon glyphicon-menu-right"></span>
+						</a>
+					</div>
+					<div class="content">
+						<div class="content_nav">
+							<div class="nav_box">
+								<a class="icon" href="four01.html">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-book"></span>
+										<p>有声书</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-certificate"></span>
+										<p>知识技能</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-list-alt"></span>
+										<p>商业财经</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-leaf"></span>
+										<p>人文历史</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-text-background"></span>
+										<p>外语世界</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-baby-formula"></span>
+										<p>亲子宝贝</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-pawn"></span>
+										<p>创作|翻唱</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-music"></span>
+										<p>音乐故事</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-headphones"></span>
+										<p>3D|电子</p>
+									</div>
+								</a>
+							</div>
+							<div class="nav_box">
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-scale"></span>
+										<p>相声曲艺</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-heart"></span>
+										<p>情感调频</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-tasks"></span>
+										<p>美文读物</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-inbox"></span>
+										<p>脱口秀</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-hd-video"></span>
+										<p>广播剧</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-sound-6-1"></span>
+										<p>二次元</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-user"></span>
+										<p>明星主播</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-film"></span>
+										<p>娱乐|影视</p>
+									</div>
+								</a>
+								<a class="icon" href="">
+									<div>
+										<span id="icon1" class="glyphicon glyphicon-blackboard"></span>
+										<p>科技科学</p>
+									</div>
+								</a>
+							</div>
+							<div class="dotsBox">
+								<p class="dots"></p>
+								<p class="dots"></p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="programList">
+						<div class="list">
+							<div class="list_left">
+								<div class="listLfet_nav">
+									<div><h3>推荐节目</h3></div>
+									<div>
+										<a><p>更多<span class="glyphicon glyphicon-menu-right"></span></p></a>
+									</div>
+								</div>
+								<div class="listLfet_content">
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p2.music.126.net/ZsWkMFCDvSHRcogr-NpFZQ==/109951163461793433.jpg?param=40x40"/>
+											<a class="font" href="">死亡万花筒·第一季·第一集</a>
+											<a class="font1" href="">死亡万花筒 第一季</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">广播剧</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p1.music.126.net/XJXZRWB8DqE00eAjJ5T92g==/109951163623305925.jpg?param=40x40"/>
+											<a class="font" href="">云村杠精回怼指南</a>
+											<a class="font1" href="">潇洒办事处</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">脱口秀</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p1.music.126.net/UCOW8XA4WaQiiO7PP8u__w==/109951163621463797.jpg?param=40x40"/>
+											<a class="font" href="">我们在纽约看戏剧</a>
+											<a class="font1" href="">一台好戏Focustage</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">脱口秀</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p2.music.126.net/IkR7EfrSfOoFcBh1J79TWw==/109951163622880902.jpg?param=40x40"/>
+											<a class="font" href="">女生的抱抱荷尔蒙</a>
+											<a class="font1" href="">馒头冷知识</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">知识技能</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p2.music.126.net/XARWnc-LjH-JUs84E-wLmg==/109951163622728651.jpg?param=40x40"/>
+											<a class="font" href="">历史上最美的女将军，可惜被人折磨致死</a>
+											<a class="font1" href="">历史人物故事</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">人文历史</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p2.music.126.net/jCtw5aTXEVz2iMlOn-KmKQ==/109951163620816082.jpg?param=40x40"/>
+											<a class="font" href="">这位居委会大妈为社区服务16年</a>
+											<a class="font1" href="">造就Talk</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">知识技能</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p2.music.126.net/m-qit77LsRVAFWgY97xw_g==/109951163623361495.jpg?param=40x40"/>
+											<a class="font" href="">书壹本：快食慢爱，方能细水长流！</a>
+											<a class="font1" href="">祸祸民谣的咖啡馆</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">音乐故事</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p2.music.126.net/jC9iEQSHRwAyVmHmbt64_w==/109951163622887326.jpg?param=40x40"/>
+											<a class="font" href="">所谓成长，是一次又一次离别</a>
+											<a class="font1" href="">若素电台❤</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">情感调频</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p2.music.126.net/SUp5SGvLhLagnQ-5nHQMMA==/109951163611526348.jpg?param=40x40"/>
+											<a class="font" href="">漫言樱语——</a>
+											<a class="font1" href="">恋声习语</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">外语世界</a>
+										</div>
+									</div>
+									<div class="contentLeft">
+										<div class="contentLeft1">
+											<img src="http://p2.music.126.net/O9PesxWBYOoxp6kp4ecUMQ==/109951163622051350.jpg?param=40x40"/>
+											<a class="font" href="">商务谈判核心技巧是什么？</a>
+											<a class="font1" href="">商业小纸条</a>
+										</div>
+										<div class="contentLeft2">
+											<a href="">商业财经</a>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="list_right">
+								<div class="listRight_nav">
+									<div><h3>节目排行榜</h3></div>
+									<div>
+										<a><p>更多<span class="glyphicon glyphicon-menu-right"></span></p></a>
+									</div>
+								</div>
+								<div class="listRight_content">
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 1</span>
+												<span class="glyphicon glyphicon-arrow-up">2</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p1.music.126.net/2aI-A9HcbnvdRhB5bueIUA==/109951163549018969.jpg?param=40x40"/>
+												<a class="font" href="">不染（完整版 欢快版）cover-毛不易</a>
+												<a class="font1" href="">丫蛋蛋换个心情做自己</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 2</span>
+												<span class="glyphicon glyphicon-arrow-up">3</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p1.music.126.net/vkUaZZrzsklONOnLMyIf3w==/109951163568843207.jpg?param=40x40"/>
+												<a class="font" href="">姑娘 cover</a>
+												<a class="font1" href="">爱抽烟屁的彦祖</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 3</span>
+												<span class="glyphicon glyphicon-arrow-up">1</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p1.music.126.net/GQy7sglrPCKuJ5AZR3UmLw==/109951163618319775.jpg?param=40x40"/>
+												<a class="font" href="">我今年20多岁，没有面包也没有爱情。</a>
+												<a class="font1" href="">蕊希电台</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 4</span>
+												<span class="glyphicon glyphicon-arrow-up">7</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p1.music.126.net/RTGg0Qy7hovsVLWpMrV3Bw==/109951163464130001.jpg?param=40x40"/>
+												<a class="font" href="">最后我们没在一起 抖音版</a>
+												<a class="font1" href="">邢凯悦XkY</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 5</span>
+												<span>new</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p2.music.126.net/5JGVTNQEu2d2eW9RnNHJMw==/109951163620608116.jpg?param=40x40"/>
+												<a class="font" href="">我从未放弃过你，只是从浓烈到悄无声息。</a>
+												<a class="font1" href="">程一电台</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 6</span>
+												<span class="glyphicon glyphicon-arrow-up">6</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p2.music.126.net/iQFfNRdrT7YZHAST9b-jTw==/109951163595084855.jpg?param=40x40"/>
+												<a class="font" href="">静悄悄 （Cover 大泫）</a>
+												<a class="font1" href="">狗子你变了en</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 7</span>
+												<span class="glyphicon glyphicon-arrow-up">9</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p2.music.126.net/oB5Oo1_Z2u7pieBGJ3zg3Q==/109951163579702860.jpg?param=40x40"/>
+												<a class="font" href="">长生诀 (Cover: 西瓜jun)</a>
+												<a class="font1" href="">等什么君</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 8</span>
+												<span class="glyphicon glyphicon-arrow-up">5</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p2.music.126.net/_W52Jood5W2ceBS41yWTiw==/109951163603155013.jpg?param=40x40"/>
+												<a class="font" href="">说谎</a>
+												<a class="font1" href="">Joysaaa呀</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>0 9</span>
+												<span class="glyphicon glyphicon-arrow-up">9</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p2.music.126.net/rFDMrJh0Gd7FE75gwezQ9A==/109951163267611554.jpg?param=40x40"/>
+												<a class="font" href="">鱼仔（抖音22秒）</a>
+												<a class="font1" href="">果达Gifty的卡拉OK</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+									<div class="contentRight">
+										<div class="contentRight1">
+											<div class="num">
+												<span>1 0</span>
+												<span class="glyphicon glyphicon-arrow-up">14</span>
+											</div>
+											<div class="contentRight_img">
+												<img src="http://p2.music.126.net/kVXIX60PHv6C56jvMOGTlA==/109951163543932162.jpg?param=40x40"/>
+												<a class="font" href="">当妮走了</a>
+												<a class="font1" href="">是阿冗</a>
+											</div>
+										</div>
+										<div class="contentRight2"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="list2_nav">
+								<div><h3>音乐故事 ● 电台</h3></div>
+								<div>
+									<a><p>更多<span class="glyphicon glyphicon-menu-right"></span></p></a>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p1.music.126.net/TScEAoCO7N2kI9qhLG49eQ==/109951163619107727.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>陈立农的耳边情歌</a></h4>
+											<p>优质偶像陈立农安利电台</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p1.music.126.net/JAXmMw2HqPwsOB9gXqwTng==/6627856092806601.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>翊个人的江湖</a></h4>
+											<p>解析人生样本 伴你成为更好自己</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p1.music.126.net/oS3VFvjZtq5mlM0gBldMbw==/109951163184183846.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>祸祸民谣的咖啡馆</a></h4>
+											<p>喝杯咖啡给你讲个故事</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p1.music.126.net/XWE0kGvicO_Mx7AVkloRBw==/109951163615669052.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>王东电台</a></h4>
+											<p>帮你寻找最有品质的音乐</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="list2_nav">
+								<div><h4>美文读物 ● 电台</h4></div>
+								<div>
+									<a><p>更多<span class="glyphicon glyphicon-menu-right"></span></p></a>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p1.music.126.net/2bK6m7ErHeZ7fea35NZxVA==/109951163617164582.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>有一间电台</a></h4>
+											<p>认真聆听你我都是故事的主角</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p1.music.126.net/EKrI0a8slahVSgkWq7NEdA==/109951163381119137.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>60's 这一分钟</a></h4>
+											<p>1分钟很长，长到可以记一辈子</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/Q7kk8kRU-ok1wSS9MNTbxQ==/18597139673899400.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>倒吊男的猫与诗</a></h4>
+											<p>好声音的柔软伴你听诗</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/9_1xFNKRuj0lrvnN8spUZg==/18612532836930965.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>疼哥深夜电台</a></h4>
+											<p>读有趣的书，做有点儿酷的人</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="list2_nav">
+								<div><h3>脱口秀 ● 电台</h3></div>
+								<div>
+									<a><p>更多<span class="glyphicon glyphicon-menu-right"></span></p></a>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/24W4kAaBtm5PS73Dk3O3RA==/109951163546073369.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>老梁的四大名著情商课</a></h4>
+											<p>识人辩事明理，中国式情商教科书</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/cEL-igelEKB9c9mwjuWmNg==/109951163559159300.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>潇洒办事处</a></h4>
+											<p>做你最贴心的电台管家</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/aEvdn8SIRiKpnOhx7vnA8w==/109951163460470316.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>三人行不行</a></h4>
+											<p>老中青三代的啥都聊脱口秀</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/yTk_MX7_cIk7G4qrXdlSZA==/109951163239045103.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>三好乱弹-见鬼日</a></h4>
+											<p>今日见鬼，提头来见</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="list2_nav">
+								<div><h3>情感调频 ● 电台</h3></div>
+								<div>
+									<a><p>更多<span class="glyphicon glyphicon-menu-right"></span></p></a>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/udvyz0fzv6KlrAogSSx1Lg==/109951163300181824.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>失恋留声机</a></h4>
+											<p>收集世界每个角落的恋爱故事</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/VkdDauEUYhsJA92nWhZPqA==/18791753232404715.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>恋爱成长电台</a></h4>
+											<p>用平凡的故事温暖特别的你</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/JzM0MCbksPle5FainInluQ==/109951163571371430.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>碎片时间冥想</a></h4>
+											<p>乘车通勤等待中，收获全新自我</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/eAjb7nNFMqODl83pe-DdZQ==/19127104277409649.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>偈偈私语</a></h4>
+											<p>由文字而出的世间情动</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="list2_nav">
+								<div><h3>创作|翻唱 ● 电台</h3></div>
+								<div>
+									<a><p>更多<span class="glyphicon glyphicon-menu-right"></span></p></a>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/u7ws5bBGpK6BKdVKaUWhDA==/109951163509734529.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>肥宅李的美好生活</a></h4>
+											<p>抖音小哥哥唱歌给你听</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/u3tRQsoXzm5WqsXry8EitQ==/109951163428126005.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>隔壁老樊的小屋</a></h4>
+											<p>一把吉他，听他用嗓音为你讲故事</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/OnSteh8I8rQcqJWBR40UHA==/109951163536843413.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>王欣宇zoe（抖音翻唱合集）</a></h4>
+											<p>被藏起来的所有秘密和声音</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/S_ny_JTO9n5KGZXh4M4epg==/109951163093896472.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>Semon大圣音乐集</a></h4>
+											<p>最帅女主播，攻嗓唱情歌</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="list2_nav">
+								<div><h3>人文历史● 电台</h3></div>
+								<div>
+									<a><p>更多<span class="glyphicon glyphicon-menu-right"></span></p></a>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/4IRCHAunVD3He146lJzlLQ==/109951163203845860.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>陈立·山水有相逢</a></h4>
+											<p>身未动心已远 听遍万水千山</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content1">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/nS-WCKR6YB2SKU5VPceRzw==/109951163378919918.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>刘心武讲108回红楼梦</a></h4>
+											<p>最原汁原味、贴近原著的红楼解读</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="list2_content">
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/MGm1PLiPKDXRK3fOTamDfQ==/109951163422724108.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>慕容引刀的西方美术史</a></h4>
+											<p>刀刀狗之父带你用故事听懂艺术</p>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="list2_content2">
+										<div class="list2_img">
+											<img src="http://p2.music.126.net/t9SilAUQ0B9WUDAwM_ABpg==/109951163332824988.jpg?param=200y200"/>
+										</div>
+										<div class="font">
+											<h4><a>梁冬·睡睡平安</a></h4>
+											<p>枕着论语 睡出更好的自己</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--中间内容结束-->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5">
+						<div class="nav footerLeft">
+							<div class="copy">
+								<p class="link">
+									<a href="">关于橙子</a>
+									<span class="line">|</span>
+									<a href="">客户服务</a>
+									<span class="line">|</span>
+									<a href="">服务条款</a>
+									<span class="line">|</span>
+									<a href="">网站导航</a>
+									<span class="line">|</span>
+									<a href="">意见反馈</a>
+								</p>
+								<p class="font">
+									<span>网易公司版权所有©1997-2018</span>
+									<span>杭州乐读科技有限公司运营：</span>
+									<a>浙网文[2018]3506-263号</a>
+								</p>
+								<p class="font">
+									<span>违法和不良信息举报电话：0571-89853516</span>
+									<span>举报邮箱：</span>
+									<a>cloudmusicservice@163.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="nav footerRight">
+							<ul class="list">
+								<li>
+									<a href="">
+										<img src="img/cz01.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz02.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz03.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz04.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz05.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,275 @@
+/* pages/page3/page3.wxss */
+
+/* 清除浮动 */
+.clear{
+  clear: both;
+}
+
+/* 页头部分 */
+.header {
+  width: 100%;
+  height: 80rpx;
+  background-color: orangered;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+.hea{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+  text-align: center;
+}
+.hea image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.header-1{
+  margin-left: 15rpx;
+  margin-right: 187rpx;
+}
+.header-3{
+  margin: 0 25rpx;
+}
+.header-5{
+  margin-left: 187rpx;
+  margin-right: 15rpx;
+}
+
+
+/* page-top部分 */
+.page-top{
+  width: 100%;
+  height: 360rpx;
+  background-color: orangered;
+}
+.top-nav {
+  width: 100%;
+  height: 90rpx;
+  background-color: orangered;
+}
+.top-nav text{
+  display: inline-block;
+  width: 250rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: white;
+}
+.top-nav view{
+  width: 56rpx;
+  height: 6rpx;
+  background-color: white;
+  margin-left: 595rpx;
+}
+.bj{
+  width: 100%;
+  height: 250rpx;
+  background-color: orangered;
+  position: absolute;
+  top: 155rpx;
+}
+.top-swiper{
+  width: 94%;
+  height: 350rpx;
+  margin-top: 187rpx;
+  margin-left: 3%;
+}
+.top-swiper swiper-item image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+
+
+/* middle-nav部分 */
+.middle-nav{
+  width: 100%;
+  height: 260rpx;
+  /* background-color: yellow; */
+  margin-top: 30rpx;
+  border-bottom: 2rpx gray solid;
+}
+.nav-1{
+  width: 150rpx;
+  height: 200rpx;
+  margin-top: 30rpx;
+  /* background-color: blue; */
+  text-align: center;
+  display: inline-block;
+  margin: 20rpx 18rpx;
+}
+.nav-1-top{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-color: orangered;
+}
+.nav-1-top image{
+  margin: 35rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.nav-1 text{
+  font-size: 28rpx;
+}
+
+/* 今日优选部分 */
+.today-top{
+  width: 100%;
+  height: 80rpx;
+  /* background-color: red; */
+  margin-top: 60rpx;
+}
+.tt{
+  display: block;
+  float: left;
+}
+.today-top-1{
+  margin: 10rpx;
+}
+.today-top-2{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+  margin-left: 400rpx;
+}
+.today-top-3{
+  font-size: 28rpx;
+  color: #515151;
+  line-height: 80rpx;
+}
+.today-show{
+  width: 100%;
+  height: 261rpx;
+  /* background-color: yellow; */
+  margin-top: 20rpx;
+}
+.today-show-img{
+  width: 260rpx;
+  height: 260rpx;
+  /* background-color: olivedrab; */
+  float: left;
+}
+.today-show-img image{
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 10rpx;
+}
+.today-show-prove{
+  width: 460rpx;
+  height: 260rpx;
+  border-bottom: 1rpx gray solid;
+  float: right;
+}
+.dt-name{
+  margin: 60rpx 0 30rpx 0;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.dt{
+  font-size: 28rpx;
+  color: #515151;
+  margin: 10rpx 0;
+}
+
+/* jptj精品推荐部分 */
+.jptj{
+  width: 100%;
+  height: 690rpx;
+  margin-top: 100rpx;
+  background-color: rgb(255, 69, 00);
+}
+.jptj-title{
+  width: 100%;
+  height: 100rpx;
+  /* background-color: yellowgreen; */
+  text-align: center;
+}
+.jptj-title text{
+  display: block;
+}
+.jptj-title-1{
+  font-size: 36rpx;
+  line-height: 50rpx;
+  padding-top: 30rpx;
+  color: white;
+}
+.jptj-title-2{
+  font-size: 28rpx;
+  line-height: 36rpx;
+  color: gainsboro;
+}
+.jptj-swiper {
+  width: 95%;
+  height: 380rpx;
+  margin-top: 50rpx;
+  text-align: center;
+  margin-left: 20rpx;
+}
+.jptj-swiper swiper-item{
+  width: 230rpx;
+  height: 380rpx;
+  border-radius: 10rpx;
+  background-color: white;
+}
+.jptj-swiper swiper-item image{
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 10rpx;
+}
+.jptj-swiper swiper-item text{
+  font-size: 28rpx;
+}
+.jptj-bottom{
+  width: 100%;
+  height: 94rpx;
+  /* background-color: green; */
+  margin-top: 30rpx;
+  text-align: center;
+}
+.jptj-bottom button{
+  width: 45%;
+  height: 90rpx;
+  border-radius: 45rpx;
+  /* border: 2rpx gray solid; */
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* 有声书部分 */
+.recList{
+  width: 100%;
+  margin-top: 70rpx;
+}
+.recList text{
+  font-size: 36rpx;
+  margin-left: 5rpx;
+}
+.recList-title-2{
+  color: gray;
+}
+.recList-show{
+  width: 100%;
+  margin-top: 15rpx;
+}
+.recList-show-1{
+  width: 230rpx;
+  height: 310rpx;
+  margin: 10rpx 10rpx 20rpx 10rpx;
+  /* background-color: yellow; */
+  display: inline-block;
+}
+.recList-show-1 image{
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 10rpx;
+}
+.recList-show-1 text{
+  display: block;
+  margin-top: 0;
+  font-size: 24rpx;
+  line-height: 30rpx;
+}

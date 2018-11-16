@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商城</title>
+    <link rel="stylesheet" href="css/page1.css"/>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/shop.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+		<header>
+			<div class="collapse navbar-collapse">
+				<div class="clear"></div>
+				<div class="loge">
+					<a href="index.html"><img src="img/loge.jpg" /> </a>
+				</div>
+				<ul class="nav nav-tabs header-nav" id="list">
+					<li role="presentation">
+						<a href="index.html" aria-controls="home" role="tab" data-toggle="tab" target="_self">发现音乐</a>
+					</li>
+					<li role="presentation">
+						<a href="charts.html" aria-controls="排行榜" role="tab" data-toggle="tab" target="_self">排行榜</a>
+					</li>
+					<li role="presentation">
+						<a href="three.html" aria-controls="歌单" role="tab" data-toggle="tab" target="_self">歌单</a>
+					</li>
+					<li role="presentation">
+						<a href="four.html" aria-controls="主播电台" role="tab" data-toggle="tab" target="_self">主播电台</a>
+					</li>
+					<li role="presentation">
+						<a href="singer.html" aria-controls="歌手" role="tab" data-toggle="tab" target="_self">歌手</a>
+					</li>
+					<li role="presentation">
+						<a href="new.html" aria-controls="歌碟上架" role="tab" data-toggle="tab" target="_self">歌碟上架</a>
+					</li>
+					<li role="presentation"  class="active">
+						<a href="shop.html" class="active" target="_self">商城</a>
+					</li>
+				</ul>
+				
+				
+			
+
+				<div class="col-sm-2 header-nav" id="so">
+					<div class="input-group">
+						<a href="#"><i class="icon-user"></i></a><input type="text" class="form-control" autofocus="autofocus" />
+
+					</div>
+				</div>
+				<ul class="nav navbar-nav navbar-right login">
+        <li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+        <li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">再次输入密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+			
+		</header>
+		<!--头部结束-->
+
+<div class="clear"></div>
+<!--内容开始-->
+
+<div class="w ">
+	
+	<img src="http://p3.music.126.net/PkbUUG2a7VfevJaruyOSTg==/109951163626595298.jpg" />
+	<div class="clear"></div>
+	<div class="top_div1">
+	 	<div class="top_div12">
+	 		<img src="http://p3.music.126.net/PzH4QQKE5R97J9f2V-SvqQ==/18585045045959929.jpg"/>
+	 		<span>数码周边</span>
+	 	</div>
+	 	<div class="top_div12">
+	 		<img src="http://p3.music.126.net/PzH4QQKE5R97J9f2V-SvqQ==/18585045045959929.jpg"/>
+	 		<span>数码周边</span>
+	 	</div>
+	 	<div class="top_div12">
+	 		<img src="http://p3.music.126.net/PzH4QQKE5R97J9f2V-SvqQ==/18585045045959929.jpg"/>
+	 		<span>数码周边</span>
+	 	</div>
+	 	<div class="top_div12">
+	 		<img src="http://p3.music.126.net/PzH4QQKE5R97J9f2V-SvqQ==/18585045045959929.jpg"/>
+	 		<span>数码周边</span>
+	 	</div>
+	 </div>
+     
+	 <div class="clear"></div>
+	 
+	 
+	 
+	 <div class="top_img1">
+	 	<img class="top_img2" src="http://p4.music.126.net/48Da_74tR8YqP0pvvvpZxg==/19143596951529145.jpg" />
+	 	<img  class="top_img2"  src="http://p4.music.126.net/48Da_74tR8YqP0pvvvpZxg==/19143596951529145.jpg" />
+	 </div>
+	 <div class="clear"></div>
+	 <h1>编辑推荐</h1>
+	<!-- 第一排-->
+	 <div class="mid">
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/e3KhCy4orO3J173QpaEvaw==/109951163614621787.jpg?param=244y244"/>
+	 	    <div> <em>热门</em> <span>JBL T120A 立体声入耳式耳机  手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</span></div>
+	 		<p>¥128</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/CgbDi3oIOv1cht2SoWLwsA==/109951163612365217.jpg?param=244y244"/>
+	 	    <div> <em>热门</em> <span>音乐茶旅-茶饮订阅礼盒-四周音乐主题套装</span></div>
+	 		<p>¥39</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/FREdWqYRTFzwTrGmCltxwQ==/109951163622414208.jpg?param=244y244"/>
+	 	    <div> <em>热门</em> <span>变形金刚狂派博派健康陶瓷马克杯</span></div>
+	 		<p>¥15</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/mpkkaUtWqWeIu5ZoD2N6Gw==/109951163628565957.jpg?param=244y244"/>
+	 	    <div> <em>热门</em> <span>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</span></div>
+	 		<p>¥199</p>
+	 	</div>
+	 </div>
+	 
+	 <!-- 第二排-->
+	  <div class="mid">
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/eUbrBoFEGwLlUwQ58TaPbw==/109951163609833417.jpg?param=244y244"/>
+	 	    <div> <em>热门</em> <span>【网易云音乐专供款】漫步者W280X 无线蓝牙入耳式运动耳机磁吸耳塞</span></div>
+	 		<p>¥169</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/ZFy4IfkI3ASFx5bKd2gSTA==/109951163613078674.jpg?param=244y244"/>
+	 	    <div> <em>热门</em> <span>击音K5降噪头戴[一键降噪] 头戴蓝牙Hi-Fi耳机 影音娱乐游戏安卓ios全兼容</span></div>
+	 		<p>¥499</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/HfewXeH8ZMPwYA4nu9OORw==/109951163613025418.jpg?param=244y244"/>
+	 	    <div> <em>热门</em> <span>JBL C200SI立体声入耳式耳机 金属蓝 手机音乐耳机 运动游戏耳机 耳机耳麦 带麦可通话</span></div>
+	 		<p>¥138</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/LnFpHe4rKs3iaA2b6kXhag==/109951163612548424.jpg?param=244y244"/>
+	 	    <div> <em>热门</em> <span>【券后129元】欧美音乐人加绒保暖卫衣（买即赠音乐人钥匙扣）</span></div>
+	 		<p>¥159</p>
+	 	</div>
+	 </div>
+	 
+
+ <h1>热门商品</h1>
+     
+      <!-- 第一排-->
+      <div class="mid">
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/lhLBWIueDvNw0NYhr3dnzw==/18690598162610450.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>网易云音乐无线蓝牙音箱MB1</span></div>
+	 		<p>¥399</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/GCgbldpa5xJ2lvHYVeFDQA==/19074327719103278.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>网易云音乐进口拼色羊毛围巾帽子礼盒装</span></div>
+	 		<p>¥299</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/BJVuKw-_CgkO477YABv1yw==/18665309394712674.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>网易云音乐车载蓝牙播放器</span></div>
+	 		<p>¥118</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/UNcGM3Ivrjxs1UbSzkiiGQ==/18903903416702874.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>漫步者（EDIFIER） H230P 入耳式立体声线控耳机</span></div>
+	 		<p>¥68</p>
+	 	</div>
+	 </div>
+	  <!-- 第二排-->
+	  <div class="mid">
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/LJDWRjKZKP1MVzxIN3LN_A==/19100715998038101.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>击音听键A1 蓝牙音频接收器 4+种佩戴 苹果安卓必备新配件</span></div>
+	 		<p>¥58</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/6T2-veT82TeFyqoIj5n10g==/109951163609734556.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>Beats X 蓝牙无线 入耳式运动耳机 带麦可通话</span></div>
+	 		<p>¥1088</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/2coI5VDxxi1WYOyXvLbpSg==/18967675091272761.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>网易云音乐蓝牙自拍杆 移动充电三挡补光</span></div>
+	 		<p>¥79</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/WJQTuMyG-5Q-c5OIpHOSBw==/109951163613046930.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>听键 让耳机秒变无线 五种音效+功放芯片 有线耳机必备配件 网易专享苹果安卓通用</span></div>
+	 		<p>¥109</p>
+	 	</div>
+	 </div>
+	  <!-- 第三排-->
+	  <div class="mid">
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/HqRahf9NIBoQI0MUsWz4pA==/18768663488236208.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>网易云音乐音乐有味香薰蜡烛</span></div>
+	 		<p>¥56</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/JZCCSu2UKqSXcxNm313hOg==/109951163614144212.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>【网易云音乐专供款】XT800金属磁吸耳机+蓝牙接收器套装击音定制版</span></div>
+	 		<p>¥139</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/JF3SzhX439AbqG9ePo8dCg==/109951163618870351.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>苹果安卓快充线数据线2.4A小米三星华为手机数据线（1米）</span></div>
+	 		<p>¥28</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/go_vQboiKTQNnoTPqEadtg==/19134800858739942.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>skullcandy Ink'd 2骷髅头入耳式重低音耳机手机线控通话男女通用</span></div>
+	 		<p>¥128</p>
+	 	</div>
+	 </div>
+	  <!-- 第四排-->
+	  <div class="mid">
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/bvVY9Q031Y52O9VfUzMUzA==/109951163613130603.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>J网易云音乐&本来设计 原木创意手机支架手机座扩音器</span></div>
+	 		<p>¥128</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/wLe5c7NpRc2zmhK3TPJB1w==/109951163291622583.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>漫步者（EDIFIER）W580BT 漫威合作款 头戴式蓝牙耳机</span></div>
+	 		<p>¥328</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/xyL2QaxkFiBl272jx746Qg==/109951163446211730.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>漫步者（EDIFIER）W293BT OXYGEN 音乐氧气瓶 无线蓝牙运动耳机</span></div>
+	 		<p>¥328</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/7q0knLsX5tr3iTcfavpf_A==/18498183627738283.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>漫步者（EDIFIER）W800BT 立体声头戴式蓝牙耳机</span></div>
+	 		<p>¥128</p>
+	 	</div>
+	 </div>
+	  <!-- 第五排-->
+	  <div class="mid">
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/lSYWC3JXtMQrERR4U-Ss5Q==/109951163069162738.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>爱国者（aigo） A691动铁圈铁手机耳机入耳式高清降噪带麦线控耳塞式</span></div>
+	 		<p>¥299</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/_EZwCjIdqayAxXCdtVWI-A==/109951162978724678.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>铁三角 CLR100is 入耳式线控带麦手机耳机</span></div>
+	 		<p>¥129</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/B-uIwMQqq5siS6WBIeU0Qg==/3310629519183105.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>网易云音乐官方定制帆布袋 米白版</span></div>
+	 		<p>¥29</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/ixuAaTE23ZK6APrH_8dTMg==/109951163117063836.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>先锋（Pioneer）SEC-CL32S 入耳式HiFi耳机 三键线控</span></div>
+	 		<p>¥119+</p>
+	 	</div>
+	 </div>
+	  <!-- 第六排-->
+	  <div class="mid">
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p3.music.126.net/9U3P2tSOdORzheuigzBF1Q==/109951162978711071.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>铁三角 CK330IS 手机专用带麦通话入耳式耳机</span></div>
+	 		<p>¥188</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/02c-XxKX-1cKpRatdJEaqw==/109951163613132665.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>本来设计 原木质音乐盒八音盒</span></div>
+	 		<p>¥78</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/Ff8wubfTMt8QiCkn_lBufw==/109951163349906542.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>联想蓝牙音频接收器T1</span></div>
+	 		<p>¥68</p>
+	 	</div>
+	 	
+	 	<div class="mid_img">
+	 	    <img class="mid_img1" src="http://p4.music.126.net/CuFi30UFj9utZXs6mTpNPA==/18984167765584687.jpg?param=263x9999&quality=75"/>
+	 	    <div> <em>热门</em> <span>本来设计 原创木质冰箱磁贴 创意礼品生日礼物</span></div>
+	 		<p>¥58</p>
+	 	</div>
+	 </div>
+ </div>
+<!--内容结束-->	
+	<div class="clear"></div>
+	
+	
+	
+	<!--尾部开始-->
+	<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5">
+						<div class="nav footerLeft">
+							<div class="copy">
+								<p class="link">
+									<a href="">关于橙子</a>
+									<span class="line">|</span>
+									<a href="">客户服务</a>
+									<span class="line">|</span>
+									<a href="">服务条款</a>
+									<span class="line">|</span>
+									<a href="">网站导航</a>
+									<span class="line">|</span>
+									<a href="">意见反馈</a>
+								</p>
+								<p class="font">
+									<span>网易公司版权所有©1997-2018</span>
+									<span>杭州乐读科技有限公司运营：</span>
+									<a>浙网文[2018]3506-263号</a>
+								</p>
+								<p class="font">
+									<span>违法和不良信息举报电话：0571-89853516</span>
+									<span>举报邮箱：</span>
+									<a>cloudmusicservice@163.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="nav footerRight">
+							<ul class="list">
+								<li>
+									<a href="">
+										<img src="img/cz01.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz02.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz03.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz04.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz05.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</footer>
+	
+	
+	
+	
+
+</body>
+</html>

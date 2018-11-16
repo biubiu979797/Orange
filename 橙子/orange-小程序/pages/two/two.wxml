@@ -1,0 +1,139 @@
+<view class='title'>
+<text class='dan'>单曲</text>
+<text>歌手</text>
+<text>专辑</text>
+<text>文件夹</text>
+
+
+</view>
+<view class='title1'>
+<image src='../img/t20.png'></image>
+<text class='bo'>播放全部</text>
+<text class='duo'>多选</text>
+</view>
+
+<view class='title2' bindtap='piao'>
+<text class='big'>飘向远方</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第10期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>天地一斗</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第10期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>儿子娃娃</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第11期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>东成西就</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第13期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>搭讪指南</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第13期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>在乌云中</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第12期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>纸飞机呀</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第11期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>童言无忌</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第12期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>场上争霸</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第10期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>目不转睛</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第11期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>新三部曲</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第13期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>顶天立地</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第13期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>童言无忌</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第10期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>
+
+<view class='title2'>
+<text class='big'>嗨嗨人生</text>
+<image src='../img/t22.png'></image>
+<text class='small'>中国新说唱-中国新说唱 第12期</text>
+<image id='img' src='../img/t23.png'></image>
+
+
+</view>

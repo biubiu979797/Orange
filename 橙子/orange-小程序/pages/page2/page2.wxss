@@ -1,0 +1,168 @@
+/* pages/page3/page3.wxss */
+
+
+/* 清除浮动 */
+.clear{
+  clear: both;
+}
+
+/* 页头部分 */
+.header {
+  width: 100%;
+  height: 80rpx;
+  background-color: orangered;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+.hea{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+  text-align: center;
+}
+.hea image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.header-1{
+  margin-left: 15rpx;
+  margin-right: 187rpx;
+}
+.header-3{
+  margin: 0 25rpx;
+}
+.header-5{
+  margin-left: 187rpx;
+  margin-right: 15rpx;
+}
+
+
+/* page-top部分 */
+.page-top{
+  width: 100%;
+  height: 360rpx;
+  background-color: orangered;
+}
+.top-nav {
+  width: 100%;
+  height: 90rpx;
+  background-color: orangered;
+}
+.top-nav text{
+  display: inline-block;
+  width: 250rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: white;
+}
+.top-nav view{
+  width: 56rpx;
+  height: 6rpx;
+  background-color: white;
+  margin-left: 348rpx;
+}
+
+
+/* 我的关注部分 */
+.myAttent{
+  width: 100%;
+  height: 300rpx;
+  /* background-color: tan; */
+  margin-top: 210rpx;
+}
+.myAttent-title{
+  display: block;
+  font-size: 34rpx;
+}
+.myAttent-friend{
+  width: 150rpx;
+  height: 210rpx;
+  /* background-color: yellow; */
+  margin: 20rpx 20rpx;
+  text-align: center;
+  display: inline-block;
+  /* margin-left: 20rpx; */
+}
+.myAttent-friend image{
+  width: 150rpx;
+  height: 150rpx; 
+  border-radius: 50%;
+}
+.myAttent-friend text{
+  font-size: 28rpx;
+  color: grey;
+}
+
+/* 好友分享部分 */
+.share{
+  width: 100%;
+  /* margin-top: 25rpx; */
+  margin-bottom: 30rpx;
+  border-top: 2rpx gainsboro solid;
+}
+.share-left{
+  margin-top: 25rpx;
+  width: 150rpx;
+  float: left;
+  /* background-color: yellow; */
+}
+.share-left image{
+  width: 120rpx;
+  height: 120rpx;
+  margin: 15rpx;
+  border-radius: 50%;
+}
+.share-right{
+  margin-top: 25rpx;
+  width: 600rpx;
+  float: right;
+}
+.share-right .share-title{
+  margin-top: 25rpx;
+  margin-left: 10rpx;
+  font-size: 32rpx;
+  color: grey;
+}
+.share-right .share-time{
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: grey;
+}
+.share-contact{
+  font-size: 32rpx;
+  margin-left: 10rpx;
+}
+.share-foot{
+  width: 100%;
+  height: 60rpx;
+}
+/* .share-foot .tb{
+  display: block;
+  height: 60rpx;
+  width: 60rpx;
+  float: left;
+} */
+.share-foot image{
+  display: block;
+  height: 60rpx;
+  width: 60rpx;
+  float: left;
+}
+.share-foot view{
+  display: block;
+  height: 60rpx;
+  font-size: 26rpx;
+  float: left;
+  line-height: 60rpx;
+}
+.pl, .fx{
+  margin-left: 80rpx;
+}
+.gd{
+  margin-left: 100rpx;
+}

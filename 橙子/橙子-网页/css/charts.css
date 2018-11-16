@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?b4lk6y');
+  src:  url('../fonts/icomoon.eot?b4lk6y#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?b4lk6y') format('truetype'),
+    url('../fonts/icomoon.woff?b4lk6y') format('woff'),
+    url('../fonts/icomoon.svg?b4lk6y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #F5F5F5;
+}
+.content1{
+	background-color: #F9F9F9;
+}
+.w{
+	width: 982px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.soaring button{
+	font-size: 15px;
+}
+.content-left{
+	width: 240px;
+	height: 2685px;
+	display: flex;
+	flex-direction: column;
+	background-color: #F9F9F9;
+	float: left;
+	
+}
+.content-left .characteristic-item{
+	width: 240px;
+	height: 70px;
+	/*background-color: red;*/
+	border: 1px solid #D3D3D3;
+	position: relative;
+	
+}
+.characteristic-item img,
+.characteristic-item p{
+	float: left;
+	
+}
+
+.characteristic-item img{
+	position: absolute;
+	left: 30px;
+	top: 15px;
+}
+
+.characteristic-item p{
+	position: absolute;
+	left: 80px;
+	top: 25px;
+}
+.characteristic{
+  	font-family: simsun;
+  	font-size: 16px;
+  	font-weight: bold;
+  	margin-left: 20px;
+  	padding-top: 10px;
+}
+.characteristic-item1{
+	background-color: white;
+}
+
+.content-right{
+	float: left;
+}
+
+.content-right img{
+	float: left;
+	margin-left: 50px;
+}
+.soaring{
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	font-size: 25px;
+}
+.soaring button{
+	width: 50px;
+	height: 30px;
+}
+.clear{
+	clear: both;
+}
+.gq-p{
+	margin: 10px 10px;
+}
+.gq{
+	margin-left: 5px;
+	border-top: 2px solid orangered;
+	margin-top: 10px;
+}
+.hot-list li{
+	list-style: none;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: relative;
+}
+
+.hot-list li i{
+	font-family: "icomoon";
+	font-style: normal;
+	position: absolute;
+	right: 0;
+}
+.hot-list a{
+	color: black;
+}
+.hot-list li:nth-of-type(2n){
+	background-color: #E8E8E8;
+}
+
+.comment-p{
+	margin: 10px 10px;
+}
+.comment{
+	margin-left: 5px;
+	border-bottom: 2px solid orangered;
+	margin-top: 30px;
+}
+
+.comment-content{
+	position: relative;
+	height: 130px;
+}
+
+.comment-content img{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: -40px;
+	top: 10px;
+}
+.comment-content i{
+	font-family: "icomoon";
+	font-style: normal;
+}
+.comment-content input{
+	width: 390px;
+	height: 50px;
+	position: absolute;
+	left: 90px;
+	top: 10px;
+}
+
+.send{
+	position: absolute;
+	right: 40px;
+	top: 80px;
+}
+.send button{
+	width: 100px;
+	height: 30px;
+}
+.send i{
+	margin-right: 10px;
+}
+
+#send-content{
+	width: 530px;
+    display: flex;
+    flex-direction: column;
+}
+
+#send-content1{
+	width: 100%;
+	height: 100px;
+}
+
+#send-content1 img{
+	width: 40px;
+	height: 40px;
+}
+#send-content1 .txt{
+	margin-bottom: 30px;
+	margin-left: 100px;
+	border-bottom: 1px solid orangered;
+}

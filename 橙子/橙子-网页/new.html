@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新碟上架</title>
+    <link rel="stylesheet" href="css/page1.css"/>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/new.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+		<header>
+			<div class="collapse navbar-collapse">
+				<div class="clear"></div>
+				<div class="loge">
+					<a href="index.html"><img src="img/loge.jpg" /> </a>
+				</div>
+				<ul class="nav nav-tabs header-nav" id="list">
+					<li role="presentation">
+						<a href="index.html" aria-controls="home" role="tab" data-toggle="tab" target="_self">发现音乐</a>
+					</li>
+					<li role="presentation">
+						<a href="charts.html" aria-controls="排行榜" role="tab" data-toggle="tab" target="_self">排行榜</a>
+					</li>
+					<li role="presentation">
+						<a href="three.html" aria-controls="歌单" role="tab" data-toggle="tab" target="_self">歌单</a>
+					</li>
+					<li role="presentation">
+						<a href="foot.html" aria-controls="主播电台" role="tab" data-toggle="tab" target="_self">主播电台</a>
+					</li>
+					<li role="presentation">
+						<a href="singer.html" aria-controls="歌手" role="tab" data-toggle="tab" target="_self">歌手</a>
+					</li>
+					<li role="presentation"  class="active">
+						<a href="new.html" aria-controls="歌碟上架" role="tab" data-toggle="tab" target="_self">歌碟上架</a>
+					</li>
+					<li role="presentation">
+						<a href="shop.html"  aria-controls="商城" role="tab" data-toggle="tab" target="_self">商城</a>
+					</li>
+				</ul>
+				
+				
+			
+
+				<div class="col-sm-2 header-nav" id="so">
+					<div class="input-group">
+						<a href="#"><i class="icon-user"></i></a><input type="text" class="form-control" autofocus="autofocus" />
+
+					</div>
+				</div>
+				<ul class="nav navbar-nav navbar-right login">
+        <li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+        <li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">再次输入密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+			
+		</header>
+		<!--头部结束-->
+<!--内容开始-->
+
+
+<nav class="w top1">
+	
+	
+	<!--第一个头部开始-->
+	<div class="top-top">
+		<span class="top_span">热门新碟</span>
+	</div>
+	  <div class="top_top_flex">
+		<div class="top_flex">
+			<!--第一排-->
+			<div class="top_div">
+			    <img src="http://p4.music.126.net/tt8xwK-ASC2iqXNUXYKoDQ==/109951163606377163.jpg?param=130y130" />
+				<p>耳朵</p>
+				<p>李荣浩</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p3.music.126.net/gxo54B2ypqq0Y6tmahBnIw==/109951163596240238.jpg?param=130y130" />
+				<p>삐삐</p>
+				<p>IU</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p4.music.126.net/3SffPVGnMVrMpGT74d3TEg==/109951163575279930.jpg?param=130y130" />
+				<p>Billboard Presents Electric Asia Vol. 2</p>
+				<p>Various Artists</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p3.music.126.net/mESDcFxTUezXk83Q6jJNdA==/109951163611604497.jpg?param=130y130" />
+				<p>新大陆</p>
+				<p>布瑞吉Bridge</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p4.music.126.net/zRc8WMPPhBGO3agThDHsEw==/109951163608338651.jpg?param=130y130" />
+				<p>혜화(暳花)</p>
+				<p>郑恩地</p>
+			</div>
+			
+		</div>
+	<!--第二排-->
+	    <div class="top_flex">
+	    	<div class="top_div">
+			    <img src="http://p3.music.126.net/1_0T60oErqK3wZdMEjBbAg==/109951163609839359.jpg?param=130y130" />
+				<p>破坏王</p>
+				<p>陈奕迅 / eason and the duo band</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p4.music.126.net/7u7t1-uEhd3bvSncd9fpsg==/109951163599182962.jpg?param=130y130" />
+				<p>Porch Songs</p>
+				<p>Rachael Yamagata</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p3.music.126.net/PY2FppGbLarJH3iIZelP8A==/109951163599180014.jpg?param=130y130" />
+				<p>中国音乐公告牌 第六期</p>
+				<p>中国音乐公告牌</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p3.music.126.net/Cz1rFEc1EwFsW1gBXi-yEg==/109951163552724449.jpg?param=130y130" />
+				<p>竹 (Bamboo)</p>
+				<p>Far East Movement / 张杰 / Kina Grannis</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p3.music.126.net/Sdj5OfcdkTwY3FIQ-cSaNg==/109951163599384908.jpg?param=130y130" />
+				<p>NCT #127 Regular-Irregular - The 1st Album</p>
+				<p>NCT 127</p>
+			</div>		
+	</div>
+</div>
+
+
+  <div class="top-top">
+		<span class="top_span">全部新碟</span>
+	</div>
+		<div class="top_flex">
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/keaGuXt2tHp8ekRlzfSORA==/109951163624013358.jpg?param=130y130" />
+				<p>Go Slow</p>
+				<p>Deca Joins</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/gJrAoLf7r6lW0j5KQo8gQQ==/109951163571349834.jpg?param=130y130" />
+				<p>Animals</p>
+				<p>Super Junior</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/XPvhKrqM7Ya0MF1z037wfQ==/109951163627010985.jpg?param=130y130" />
+				<p>泉因为你</p>
+				<p>许书豪</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/2ZgOYS4vFZtPT1CIIGcfgw==/109951163622408511.jpg?param=130y130" />
+				<p>NEVER SURRENDER</p>
+				<p>水樹奈々</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/AzfWkr7ab-9thysB07oL9Q==/109951163626607434.jpg?param=130y130" />
+				<p>과거의 밤</p>
+				<p>全根和</p>
+			</div>
+			
+		</div>
+	
+	    <div class="top_flex">
+	    	<div class="top_div">
+			    <img src="http://p1.music.126.net/SARwxcs7w_zDsY3NhwNnWA==/109951163626615083.jpg?param=130y130" />
+				<p>열두밤 OST Part. 2</p>
+				<p>Stella Jang</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/5LoKB4RBOrKMD1wVOUmJnw==/109951163626681582.jpg?param=130y130" />
+				<p>Sì (Deluxe)</p>
+				<p>Andrea Bocelli</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/W1GjUJ6qCJtO3wORKj1Y_A==/109951163626414277.jpg?param=130y130" />
+				<p>Just For You</p>
+				<p>B.P.E</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/6WQMSWiaICZ1MqS6CwjIOQ==/109951163622593871.jpg?param=130y130" />
+				<p>Normani x Calvin Harris</p>
+				<p>Normani / Calvin Harris</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/KgWGp_OAx5sAW6NCGQIClw==/109951163626011890.jpg?param=130y130" />
+				<p>angela All Time Best 2003-2009</p>
+				<p>angela</p>
+			</div>		
+	</div>
+	
+	  <div class="top_flex">
+	    	<div class="top_div">
+			    <img src="http://p1.music.126.net/UXaKrGU2KVVE8lntbsKuNA==/109951163626094528.jpg?param=130y130" />
+				<p>Honey</p>
+				<p>Robyn</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/F4tH5S4--qWtMWvoloHQJQ==/109951163626352037.jpg?param=130y130" />
+				<p>Herz Catalog - Dear you</p>
+				<p>Herz Analog</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/rRUYS6R8Mqvx_B_1eMDkIg==/109951163626317897.jpg?param=130y130" />
+				<p>Grapevine</p>
+				<p>Tiësto</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/fortyGJJjwCpVopQV-RdXQ==/109951163626088920.jpg?param=130y130" />
+				<p>MASTERS OF THE SUN VOL. 1</p>
+				<p>Black Eyed Peas</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p1.music.126.net/KgWGp_OAx5sAW6NCGQIClw==/109951163626011890.jpg?param=130y130" />
+				<p>angela All Time Best 2003-2009</p>
+				<p>angela</p>
+			</div>		
+	</div>
+	
+	  <div class="top_flex">
+	    	<div class="top_div">
+			    <img src="http://p2.music.126.net/fdBVaMTG_N0bN5mane1DlQ==/109951163626148965.jpg?param=130y130" />
+				<p>AYA</p>
+				<p>ICE / SevenGurusFamily</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/3lmKP7KFPELQnZdzNqXmSw==/109951163625152924.jpg?param=130y130" />
+				<p>Waste It On Me</p>
+				<p>Steve Aoki / BTS (防弹少年团)</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/myd0EI_TdD3m0ftlRwHmqg==/109951163625896346.jpg?param=130y130" />
+				<p>달콤데이#6 아직, 우린</p>
+				<p>朴载正 / 소각소각</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/_aZLdzQXPAqJmer5344thg==/109951163625875289.jpg?param=130y130" />
+				<p>晚安</p>
+				<p>刘泽毓 / 琪琪ALina</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/QWLWLIRmGBQbi_QJeBK9eQ==/109951163624664026.jpg?param=130y130" />
+				<p>A Legendary Christmas</p>
+				<p>John Legend</p>
+			</div>		
+	</div>
+	
+	  <div class="top_flex">
+	    	<div class="top_div">
+			    <img src="http://p2.music.126.net/Eitg7L3WGhDgX3DELaWyeg==/109951163628737482.jpg?param=130y130" />
+				<p>Jubilee Road</p>
+				<p>Tom Odell</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/td-M4Ou3Ur3MhheFv8e2iw==/109951163624675767.jpg?param=130y130" />
+				<p>歌颂</p>
+				<p>俞灏明</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p4.music.126.net/tt8xwK-ASC2iqXNUXYKoDQ==/109951163606377163.jpg?param=130y130" />
+				<p>无名之辈</p>
+				<p>汪苏泷</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/ZwP_akSgHlPGrJdpUDvOyQ==/109951163626124232.jpg?param=130y130" />
+				<p>Suspiria (Music for the Luca Guadagnino Film)</p>
+				<p>Thom Yorke</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/KiDSDRWOiImGwDTTP73HBA==/109951163612623009.jpg?param=130y130" />
+				<p>Siren</p>
+				<p>The Chainsmokers / Aazar</p>
+			</div>		
+	</div>
+	
+	  <div class="top_flex">
+	    	<div class="top_div">
+			    <img src="http://p2.music.126.net/SsnoMiGvUDf69M-zc978Hg==/109951163612932110.jpg?param=130y130" />
+				<p>Thunderclouds (Lost Frequencies Remix)</p>
+				<p>LSD / Sia / Diplo / Labrinth / Lost Frequencies</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/K825PJLYpwNM9wVnYo0aww==/109951163628625132.jpg?param=130y130" />
+				<p>Happy Now</p>
+				<p>Kygo / Sandro Cavazza</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/4flwf79BVdm39w4sl9zm-A==/109951163628617973.jpg?param=130y130" />
+				<p>Christmas Is Here!</p>
+				<p>Pentatonix</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/gkwGCjumih4a4VauxWFN1g==/109951163622787397.jpg?param=130y130" />
+				<p>Why Haven't I Met You?</p>
+				<p>Cameron Dallas</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/msk9N7CSFkTrKS4dhVka5Q==/109951163624102942.jpg?param=130y130" />
+				<p>Don't Know You</p>
+				<p>Justin Caruso / Jake Miller</p>
+			</div>		
+	</div>
+	
+	
+	  <div class="top_flex">
+	    	<div class="top_div">
+			    <img src="http://p2.music.126.net/zQfGxoXLTJlRKF_8c9mk8w==/109951163627913473.jpg?param=130y130" />
+				<p>3 (The Purple Album)</p>
+				<p>Lukas Graham</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/IeOjL8tH0MSDvQTgpgwK_g==/109951163621882196.jpg?param=130y130" />
+				<p>Life Ain't Always Roses</p>
+				<p>E^ST</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/Nr1pAHmqipxikjznXueeeA==/109951163621886508.jpg?param=130y130" />
+				<p>Survivor</p>
+				<p>Daniel Powter / 于文文</p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/q9M3WfJz5GiHKMQt278o3Q==/109951163598201912.jpg?param=130y130" />
+				<p>Josquin des </p>
+				<p>Daniel Reuss </p>
+			</div>
+			<div class="top_div">
+			    <img src="http://p2.music.126.net/vAp-1PGXjffIRJ_W0osrng==/109951163620350184.jpg?param=130y130" />
+				<p>B.E.D</p>
+				<p>Baxter Dury </p>
+			</div>		
+	</div>
+	
+</div>
+
+
+<div class="end">
+	<div>
+	<a href="#" >上一页</a>
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#" >4</a>
+	<a href="#" >5</a>
+	<a href="#" >6</a>
+	<a href="#" >7</a>
+	<a href="#">8</a>
+	<span class="zdot">...</span>
+	<a href="#">15</a>
+	<a href="#" >下一页</a>
+</div>
+</div>
+
+</nav>
+
+
+ 
+<!--内容结束-->	
+	<div class="clear"></div>
+	
+	
+	
+	<!--尾部开始-->
+	<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5">
+						<div class="nav footerLeft">
+							<div class="copy">
+								<p class="link">
+									<a href="">关于橙子</a>
+									<span class="line">|</span>
+									<a href="">客户服务</a>
+									<span class="line">|</span>
+									<a href="">服务条款</a>
+									<span class="line">|</span>
+									<a href="">网站导航</a>
+									<span class="line">|</span>
+									<a href="">意见反馈</a>
+								</p>
+								<p class="font">
+									<span>网易公司版权所有©1997-2018</span>
+									<span>杭州乐读科技有限公司运营：</span>
+									<a>浙网文[2018]3506-263号</a>
+								</p>
+								<p class="font">
+									<span>违法和不良信息举报电话：0571-89853516</span>
+									<span>举报邮箱：</span>
+									<a>cloudmusicservice@163.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="nav footerRight">
+							<ul class="list">
+								<li>
+									<a href="">
+										<img src="img/cz01.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz02.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz03.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz04.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz05.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</footer>
+	
+	
+	
+	
+
+</body>
+</html>

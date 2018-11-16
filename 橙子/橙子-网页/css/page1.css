@@ -1,0 +1,385 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.w{
+	width: 982px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+
+body{
+	background-color: #F5F5F5;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?b4lk6y');
+  src:  url('../fonts/icomoon.eot?b4lk6y#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?b4lk6y') format('truetype'),
+    url('../fonts/icomoon.woff?b4lk6y') format('woff'),
+    url('../fonts/icomoon.svg?b4lk6y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.banner{
+    width: 100%;
+    height: 336px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.divImg{
+    width: 100%;
+    height: 336px;
+    position: relative;
+}
+
+.images{
+	display: none;
+	position: relative;
+}
+.images img{
+    /*width: 1200px;
+    height: 336px;*/
+    position: absolute;
+    left:50%;
+    margin-left: -400px;
+}
+
+.slide1{
+    background-image:url("http://p1.music.126.net/qfJyV4w7XL9qmzWG8GAVPg==/109951163623824699.jpg");
+}
+.slide2{
+    background-image:url("http://p1.music.126.net/ooKg7zXFJyBVIz-Tas_Dfg==/109951163622104812.jpg");
+}
+.slide3{
+    background-image:url("http://p1.music.126.net/kluM_YImYkxc2iXoWYaWUg==/109951163615787829.jpg");
+}
+
+.slide1,
+.slide2,
+.slide3{
+	width: 100%;
+	height: 336px;
+}
+.active{
+    display: block;
+}
+.button{
+    display: inline-block;
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top:-40px;
+    background: url("../images/arrow.png") no-repeat center center;
+}
+
+.button:hover{
+    background-color:gray;
+    opacity: 0.8;
+}
+
+.prev{
+	font-family: "icomoon";
+    transform: rotate(180deg);
+}
+.next{
+	font-family: "icomoon";
+    left: auto;
+    right: 0; 
+}
+
+.dots{
+    position: absolute;
+    right: 20px;
+    bottom:10px
+}
+
+.dots>span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: gray;
+    margin-left:5px;
+    cursor:pointer;
+}
+
+.dots>span.span-active{
+    background-color: wheat;
+}
+
+
+/*左边内容*/
+.content-left{
+	width: 712px;
+	background-color: white;
+	float: left;
+}
+.content-nav{
+	width: 690px;
+	height: 55px;
+	margin-left: 21px;
+	border-bottom: 2px solid orangered;
+}
+
+.hot a{
+	float: left;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+
+.music-list li{
+	float: left;
+	margin-left: 22px;
+	list-style: none;
+	color: #666666;
+	margin-top: 25px;
+}
+.music-list li a{
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+}
+
+.music-list li a:hover{
+	text-decoration: underline;
+}
+
+.music-list li span{
+	display: inline-block;
+	width: 1px;
+	height: 10px;
+	background-color: black;
+	
+}
+
+.more{
+	float: right;
+	color: black;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-right: 15px;
+}
+
+/*中间内容*/
+.music-list-one{
+	width: 690px;
+	height: 210px;
+	display: flex;
+	direction: ltr;
+	justify-content: center;
+	/*background-color: bisque;*/
+	position: relative;
+}
+
+.gq-item{
+	width: 140px;
+	height: 140px;
+	/*background-color: black;*/
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.music-play1{
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+	margin-left: 45px;
+}
+
+.music-play2{
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+	margin-left: 205px;
+}
+
+.music-play3{
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+	margin-left: 365px;
+}
+
+.music-play4{
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+	margin-left: 525px;
+}
+
+.music-play{
+	width: 140px;
+	height: 30px;
+	background-color: rgba(0,0,0,0.4);
+	
+}
+
+.music-play i{
+	font-family: "icomoon";
+	color: rgba(255,255,255,0.8);
+	font-style: normal;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	
+}
+
+.new-music p{
+	font-size: 15px;
+	font-family: "simsun";
+	color: black;
+	
+}
+.new-music em{
+	font-size: 12px;
+	font-family: "simsun";
+	color: black;
+}
+
+.new-music a{
+	text-decoration: none;
+}
+
+.new-music em:hover{
+	text-decoration: underline;
+}
+
+.music-list-two{
+	width: 690px;
+	height: 500px;
+	display: flex;
+	direction: ltr;
+	justify-content: center;
+	background-color: white;
+	position: relative;
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.gq-item2{
+	width: 230px;
+	height: 480px;
+	border: 1px solid #C3C3C3;
+	background-color: #F4F4F4;
+}
+
+.list-img{
+	width: 228px;
+	height: 120px;
+	position: relative;
+	/*background-color: red;*/
+}
+
+.list-img img{
+	position: absolute;
+	left: 25px;
+	top: 20px;
+}
+
+.list-img a{
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	right: 20px;
+	top: 50px;
+}
+.list-img a:hover{
+	text-decoration: underline;
+}
+
+.list-img p{
+	text-align: center;
+}
+
+.hot-list li{
+	list-style: none;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: relative;
+}
+
+.hot-list li i{
+	font-family: "icomoon";
+	font-style: normal;
+	position: absolute;
+	right: 0;
+}
+.hot-list a{
+	color: black;
+}
+.hot-list li:nth-of-type(2n){
+	background-color: #E8E8E8;
+}
+/*右边内容*/
+.content-right{
+	width: 269px;
+	height: 1355px;
+	background-color: white;
+	float: right;
+	border-left: 1px solid #F5F5F5;
+}
+.use-login{
+	width: 250px;
+	height: 105px;
+	box-shadow: 10px 0px 17px 5px grey;
+}
+.use-login p{
+	text-align: center;
+	padding: 10px 10px;
+	font-family: simsun;
+	font-size: 15px;
+}
+.use-login button{
+	width: 110px;
+	height: 35px;
+	background-color: orangered;
+	border-radius: 10px;
+	border: none;
+	margin-left: 75px;
+}
+.singer-come{
+	margin: 5px 5px;
+}
+.singer{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.singer .more{
+	position: absolute;
+	right: 0;
+	top: -28px;
+}
+.singer-item{
+	width: 211px;
+	height: 70px;
+	border: 1px solid black;
+	margin-top: 10px;
+}
+.singer-item p,
+.singer-item img{
+	float: left;
+}
+.singer-item p{
+	width: 100px;
+	font-family: simsun;
+	font-size: 15px;
+}
+.singer-item img{
+	width: 62px;
+	height: 100%;
+}

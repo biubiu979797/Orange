@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#contentbox {
+	width: 100%;
+	background: #F5F5F5;
+}
+.container {
+	min-height: 700px;
+	/*background: orangered;*/
+	display: flex;
+}
+.container_box {
+	width: 1033px;
+	background: white;
+	border-top: 1px solid #D3D3D3;
+	border-left: 1px solid #D3D3D3;
+	border-right: 1px solid #D3D3D3;
+	margin-left: 60px;
+}
+.container_wrap {
+	width: 933px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	
+}
+.container_nav {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid orangered;
+}
+.container_left {
+	display:flex;
+}
+.container_left select {
+	width: 94px;
+	height: 31px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.container_right {
+	display: flex;
+}
+.container_right .hot,.container_right .new {
+	width: 47px;
+	height: 30px;
+}
+.container_right .hot {
+	display: block;
+	border-bottom: 1px solid #A80909;
+	border-top: 1px solid #A80909;
+	border-left: 1px solid #A80909;
+	background-color: orangered;
+}
+.container_right .new {
+	display: block;
+	border-bottom: 1px solid #D5D5D5;
+	border-top: 1px solid #D5D5D5;
+	border-right: 1px solid #D5D5D5;
+	background-color: #F6F6F6;
+}
+.container_right .hot {
+	color: white;
+}
+.container_right .hot:hover {
+	color: white;
+}
+.container_right .new {
+	color: 	#808080;
+}
+.container_right .new:hover {
+	color: 	#808080;
+}
+/*头部结束*/
+.container_img {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 32px;
+}
+.imgbox {
+	width: 150px;
+	height: 195px;
+}
+.imgbox img {
+	width: 141px;
+	height: 141px;
+	border: 1px solid #D8D8D8;
+}
+.bottom {
+	width: 140px;
+	height: 27px;
+	background:rgba(0,0,0,.5);
+	margin-left: -205px;
+	margin-top: 113px;
+	color: #CBCBCB;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom_icon {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.bottom_play {
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.bottom_play a {
+	color:#CBCBCB ;
+}
+.bottom_play a:hover {
+	color:white ;
+}
+.imgbox .font1 {
+	color: #000000;
+	/*overflow: hidden;*/
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
+    /*text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;*/
+}
+.imgbox .font1:hover {
+	color: #000000;
+}
+.imgbox .font2 {
+	color: #666666;
+}
+.imgbox span {
+	color: 	#A9A9A9;
+}
+.imgbox .font2:hover {
+	color: #666666
+}
+.imgbox #font3 {
+	color: orangered;
+}

@@ -1,0 +1,194 @@
+<!--pages/page3/page3.wxml-->
+<view class='header'>
+  <view class='hea header-1'>
+    <image src='../../icon1/cd.png'></image>
+  </view>
+  <view class='hea header-2'>
+    <image src='../../icon1/yy.png'></image>
+  </view>
+  <view class='hea header-3'>
+    <image src='../../icon1/c.png'></image>
+  </view>
+  <view class='hea header-4'>
+    <image src='../../icon1/bf.png'></image>
+  </view>
+  <icon class='hea header-5' type='search' color='white' size='24'></icon>
+
+  <view class='top-nav'>
+    <text bindtap='tuijian'>推荐</text>
+    <text bindtap='pengyou'>朋友</text>
+    <text bindtap=''>电台</text>
+    <view></view>
+  </view>
+</view>
+
+<view>
+  <view class='bj'></view>
+  <swiper autoplay='true' indicator-dots='true' indicator-active-color='orangered' circular='true' class='top-swiper'>
+    <swiper-item>
+      <image src='http://p1.music.126.net/ulW4yJjxB8eAvInYOobNLg==/109951163621926009.jpg'>
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://p1.music.126.net/LKytjNHMEtWjJAYyIg1aqw==/109951163623075570.jpg'>
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://p1.music.126.net/zOJerZ94LK17jRRNEkuhdA==/109951163621919441.jpg'>
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://p1.music.126.net/eutlOcSlh-dtpWq328R6bQ==/109951163615791721.jpg'>
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://p1.music.126.net/fklp8j8RXOys1RyEbC00iA==/109951163621954602.jpg'>
+      </image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='middle-nav'>
+  <view class='nav-1'>
+    <view class='nav-1-top'>
+      <image src='../../icon1/fl.png'></image>
+    </view>
+    <text>电台分类</text>
+  </view>
+  <view class='nav-1'>
+    <view class='nav-1-top'>
+      <image src='../../icon1/qd.png'></image>
+    </view>
+    <text>电台排行</text>
+  </view>
+  <view class='nav-1'>
+    <view class='nav-1-top'>
+      <image src='../../icon1/jp.png'></image>
+    </view>
+    <text>付费精品</text>
+  </view>
+  <view class='nav-1'>
+    <view class='nav-1-top'>
+      <image src='../../icon1/c.png'></image>
+    </view>
+    <text>橙子电台</text>
+  </view>
+</view>
+
+<!-- 今日优选部分 -->
+<view class='today'>
+  <view class='today-top'>
+    <view class='clear'></view>
+    <text class='tt today-top-1'>今日优选</text>
+    <image class='tt today-top-2' src='../../icon1/f5.png'></image>
+    <text class='tt today-top-3'>换一换</text>
+    <view class='clear'></view>
+  </view>
+  <view class='today-show'>
+    <view class='today-show-img'>
+      <image src='http://p2.music.126.net/6ZHzYCPgiZngngqx3dvO2w==/109951163592269393.jpg?param=200y200'></image>
+    </view>
+    <view class='today-show-prove'>
+      <view class='dt-name'>GG电台</view>
+      <view class='dt'>节目：22</view>
+      <view class='dt'>总是对你瞎说大实话</view>
+    </view>
+  </view>
+
+  <view class='today-show'>
+    <view class='today-show-img'>
+      <image src='http://p2.music.126.net/vkUaZZrzsklONOnLMyIf3w==/109951163568843207.jpg?param=140y140'></image>
+    </view>
+    <view class='today-show-prove'>
+      <view class='dt-name'>爱抽烟屁的彦祖</view>
+      <view class='dt'>节目：姑娘 cover</view>
+      <view class='dt'>想怎么吃怎么吃，想蘸麻</view>
+    </view>
+  </view>
+
+  <view class='today-show'>
+    <view class='today-show-img'>
+      <image src='http://p2.music.126.net/iQFfNRdrT7YZHAST9b-jTw==/109951163595084855.jpg?param=140y140'></image>
+    </view>
+    <view class='today-show-prove'>
+      <view class='dt-name'>静悄悄</view>
+      <view class='dt'>节目：18</view>
+      <view class='dt'>狗子，你变了</view>
+    </view>
+  </view>
+</view>
+
+<!-- 精品推荐部分 -->
+<view class='jptj'>
+  <view class='jptj-title'>
+    <text class='jptj-title-1'>精品推荐</text>
+    <text class='jptj-title-2'>你值得拥有的优质内容</text>
+  </view> 
+
+    <swiper circular='true' class='jptj-swiper' display-multiple-items='3'>
+      <swiper-item class='jptj-swiper-1'>
+        <image src='http://p1.music.126.net/nS-WCKR6YB2SKU5VPceRzw==/109951163378919918.jpg?param=200y200'></image>
+        <text>美学大师细说大观园里的青春故事</text>
+      </swiper-item>
+      <swiper-item>
+        <image src='http://p1.music.126.net/MGm1PLiPKDXRK3fOTamDfQ==/109951163422724108.jpg?param=200y200'></image>
+        <text>边江、汇龙大大同闯生死之门</text>
+      </swiper-item>
+      <swiper-item>
+        <image src='http://p1.music.126.net/4IRCHAunVD3He146lJzlLQ==/109951163203845860.jpg?param=200y200'></image>
+        <text>凯叔马未都趣味讲述中国历史</text>
+      </swiper-item>
+    </swiper>
+
+  <view class='jptj-bottom'>
+    <button>全部精品电台></button>
+  </view>
+</view>
+
+<view class='recList'>
+  <view class='recList-title'>
+    <text>有声书</text>
+    <text class='recList-title-2'>></text>
+  </view> 
+  <view class='recList-show'>
+    <view class='recList-show-1'>
+      <image src='http://p1.music.126.net/dNEA2Ydz1DMZ4d2dA91ygw==/109951163618645722.jpg?param=200y200'></image>
+      <text>木偶漫画灵异代表作改编广播剧</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p1.music.126.net/UIgbT6pZvFwEDrrPG-I5ng==/109951163377377433.jpg?param=200y200'></image>
+      <text>江湖道人的阴阳生死簿</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p1.music.126.net/wozVKoQOmDSkD7Z0NiaQVQ==/109951163382068516.jpg?param=200y200'></image>
+      <text>古老陵墓,斗鬼斗怪斗人心</text>
+    </view>
+  </view>
+</view>
+
+<view class='recList'>
+  <view class='recList-title'>
+    <text>知识技能</text>
+    <text class='recList-title-2'>></text>
+  </view> 
+  <view class='recList-show'>
+    <view class='recList-show-1'>
+      <image src='http://p2.music.126.net/tIZcg22xyJRIBKQ9tZsO-g==/18892908300210747.jpg?param=200y200'></image>
+      <text>每天5分钟，了解自己透析人性</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p2.music.126.net/zEu1LnKbB8o_TUBvjR_yLg==/3431575796554628.jpg?param=200y200'></image>
+      <text>优秀的设计：设计名师访谈</text>
+    </view>
+
+    <view class='recList-show-1'>
+      <image src='http://p2.music.126.net/7k9LFurHjWgEHiZEU1SvYg==/3399689963473339.jpg?param=200y200'></image>
+      <text>大宝教你怎么好好说话</text>
+    </view>
+  </view>
+</view>
+
+

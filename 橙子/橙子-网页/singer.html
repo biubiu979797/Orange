@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>歌手</title>
+    <link rel="stylesheet" href="css/page1.css"/>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/singer.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+		<header>
+			<div class="collapse navbar-collapse">
+				<div class="clear"></div>
+				<div class="loge">
+					<a href="index.html"><img src="img/loge.jpg" /> </a>
+				</div>
+				<ul class="nav nav-tabs header-nav" id="list">
+					<li role="presentation">
+						<a href="index.html" aria-controls="home" role="tab" data-toggle="tab" target="_self">发现音乐</a>
+					</li>
+					<li role="presentation">
+						<a href="charts.html" aria-controls="排行榜" role="tab" data-toggle="tab" target="_self">排行榜</a>
+					</li>
+					<li role="presentation">
+						<a href="three.html" aria-controls="歌单" role="tab" data-toggle="tab" target="_self">歌单</a>
+					</li>
+					<li role="presentation">
+						<a href="four.html" aria-controls="主播电台" role="tab" data-toggle="tab" target="_self">主播电台</a>
+					</li>
+					<li role="presentation"  class="active">
+						<a href="singer.html" aria-controls="歌手" role="tab" data-toggle="tab" target="_self">歌手</a>
+					</li>
+					<li role="presentation">
+						<a href="new.html" aria-controls="歌碟上架" role="tab" data-toggle="tab" target="_self">歌碟上架</a>
+					</li>
+					<li role="presentation">
+						<a href="shop.html" target="_self">商城</a>
+					</li>
+				</ul>
+				
+				
+			
+
+				<div class="col-sm-2 header-nav" id="so">
+					<div class="input-group">
+						<a href="#"><i class="icon-user"></i></a><input type="text" class="form-control" autofocus="autofocus" />
+
+					</div>
+				</div>
+				<ul class="nav navbar-nav navbar-right login">
+        <li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+        <li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">再次输入密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+			
+		</header>
+		<!--头部结束-->
+
+
+<!--内容开始-->
+
+   <aside class="w">
+  <div class="container1">
+   		<div class="container2 ">
+   			
+   			<ul class="ul0">
+   				<li>推荐</li>
+   				<li>推荐歌手</li>
+   				<li>入驻歌手</li>
+   			</ul>
+   		</div>
+   		
+   		<div class="container2">
+   			<ul class="ul1">
+   				<li>华语</li>
+   				<li>华语男歌手</li>
+   				<li>华语女歌手</li>
+   				<li>华语组合/乐队</li>
+   			</ul>
+   		</div>
+   		<div class="container2">
+   			<ul class="ul1">
+   				<li>欧美</li>
+   				<li>欧美男歌手</li>
+   				<li>欧美女歌手</li>
+   				<li>欧美组合/乐队</li>
+   			</ul>
+   		</div>
+   		<div class="container2">
+   		     <ul class="ul1">
+   				<li>日本</li>
+   				<li>日本男歌手</li>
+   				<li>日本女歌手</li>
+   				<li>日本组合/乐队</li>
+   			</ul>
+   		</div>
+   	    <div class="container2">
+   	       <ul class="ul1">
+   				<li>韩国</li>
+   				<li>韩国男歌手</li>
+   				<li>韩国女歌手</li>
+   				<li>韩国组合/乐队</li>
+   			</ul>
+   	    </div>
+   	    <div class="container2">
+           <ul class="ul1">
+   				<li>其他</li>
+   				<li>其他男歌手</li>
+   				<li>其他女歌手</li>
+   				<li>其他组合/乐队</li>
+   			</ul>
+   	    </div>
+   	    
+   	
+   
+   	</div>
+   </aside>
+  
+ <!-- right star-->
+  <div class="right">
+ 
+
+ <!-- right1 star-->
+
+  <div class="right1">
+  <!-- right2 star-->
+    <div class="right2"> 
+    <div class="right2_top">
+    	<span>入驻歌手</span> <span>更多></span>
+    </div>
+     <div class="right2_mid"> 
+     	<div class="right2_mid2">
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/F9asgcj7C7qSl_je9XDvRw==/603631883675241.jpg?param=130y130" />
+     	      <p>张惠妹</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/7BUW9dnqOMF1dn3ioKJOMg==/109951162820707114.jpg?param=130y130" />
+     	      <p>Fine乐团</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/TiRAIiIihOgtBgYB6DZRXA==/109951162916034289.jpg?param=130y130" />
+     	      <p>万晓利</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/w_UWOls2uCkFN_U62788Xg==/18806046882229308.jpg?param=130y130" />
+     	      <p>赵雷</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/NDsX060FnCtiDMZN-c_9Gw==/3438172872737957.jpg?param=130y130" />
+     	      <p>王三溥</p>
+     		</div>
+     	</div>
+     	
+     	<div class="right2_mid2">
+     				<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/TQZGbxp-xnJla-q7ii9z0A==/1364493985498917.jpg?param=130y130" />
+     	      <p>吴莫愁</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/aSFrKm-igpxlvzYrdJOMPQ==/279275953476688.jpg?param=130y130" />
+     	      <p>洪启</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/d9xefjQIm5uWrEyalZjCkg==/109951163522346856.jpg?param=130y130" />
+     	      <p>李霄云</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/YOmW5GdOWA44oascVdjfUw==/280375465100304.jpg?param=130y130" />
+     	      <p>孙楠</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/1GIlkxKmvKu66ufU83FyvA==/31885837222663.jpg?param=130y130" />
+     	      <p>老狼</p>
+     		</div>
+     	</div>
+     </div>
+    
+    </div>
+     <!-- right2 end-->
+     
+      <!-- right3 star-->
+     <div class="right3">
+     	
+     <div class="right2_top"><span>更多歌手</span></div>	
+          <div class="right2_mid">
+     	<div class="right2_mid2">
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/ULlwJ2drOfYv-f6-_7jGGQ==/3250156379592966.jpg?param=130y130" />
+     	      <p>薛之谦</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/f2R3-se6DLlcucIusS6mQQ==/109951163610593454.jpg?param=130y130" />
+     	      <p>花粥</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/_d1scu7z_1dmd0Zgv9mTLA==/19165587183900212.jpg?param=130y130" />
+     	      <p>陈奕迅</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/cnGpIQ6rQCKVrDyVVSpzeg==/3263350518850877.jpg?param=130y130" />
+     	      <p>林俊杰</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/r7uMnwjWpYMuQI_3ZTg56A==/18528969953189760.jpg?param=130y130" />
+     	      <p>邓紫棋</p>
+     		</div>
+     	</div>
+     	<div class="right2_mid2">
+     			<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/AsrGD4Sf0HWJ3mK-Y__PLw==/18981968742063387.jpg?param=130y130" />
+     	      <p>ALLN</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/DeH1T1OKwTL2bIg3l8L21A==/109951163186203713.jpg?param=130y130" />
+     	      <p>林宥嘉</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/daN7qav1x0nWl-TZRe41dw==/109951163303423969.jpg?param=130y130" />
+     	      <p>王贰浪</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p3.music.126.net/Q92YwJrk2f2tsK-7B0VIhQ==/6628955605123612.jpg?param=130y130" />
+     	      <p>陈粒</p>
+     		</div>
+     		<div class="right_mid_row">
+     			<img src="http://p4.music.126.net/RQ8pNp66CqAsieGtSaj_5g==/109951163398568078.jpg?param=130y130" />
+     	      <p>李荣浩</p>
+     		</div>
+     	</div>
+     </div>
+     </div>
+ 	<!-- right3 end-->
+ 	
+ 	<!-- right4 star-->
+     <div class="right4">
+    <div class="right4_top">
+
+    	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>华晨宇</p></div>
+     		<div class="right4_mid_row"><p>蔡健雅</p></div>
+     		<div class="right4_mid_row"><p>王以太</p></div>
+     		<div class="right4_mid_row"><p>The Chainsmokers</p></div>
+     		<div class="right4_mid_row"><p>马雨阳</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>徐秉龙</p></div>
+     		<div class="right4_mid_row"><p>毛不易</p></div>
+     		<div class="right4_mid_row"><p>房东的猫</p></div>
+     		<div class="right4_mid_row"><p>艾热</p></div>
+     		<div class="right4_mid_row"><p>Charlie Puth</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>许嵩</p></div>
+     		<div class="right4_mid_row"><p>王力宏</p></div>
+     		<div class="right4_mid_row"><p>田馥甄</p></div>
+     		<div class="right4_mid_row"><p>Coldplay</p></div>
+     		<div class="right4_mid_row"><p>双笙</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>张学友</p></div>
+     		<div class="right4_mid_row"><p>任然</p></div>
+     		<div class="right4_mid_row"><p>张紫豪</p></div>
+     		<div class="right4_mid_row"><p>Justin Biebe</p></div>
+     		<div class="right4_mid_row"><p>赵雷</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>木小雅</p></div>
+     		<div class="right4_mid_row"><p>金玟岐</p></div>
+     		<div class="right4_mid_row"><p>王菲</p></div>
+     		<div class="right4_mid_row"><p>Christine Welch</p></div>
+     		<div class="right4_mid_row"><p>莫文蔚</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>李佳隆</p></div>
+     		<div class="right4_mid_row"><p>Ed Sheeran</p></div>
+     		<div class="right4_mid_row"><p>王大毛</p></div>
+     		<div class="right4_mid_row"><p>孙燕姿</p></div>
+     		<div class="right4_mid_row"><p>沈以诚</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>王北车</p></div>
+     		<div class="right4_mid_row"><p>Olly Murs</p></div>
+     		<div class="right4_mid_row"><p>BTS (防弹少年团)</p></div>
+     		<div class="right4_mid_row"><p>Sia</p></div>
+     		<div class="right4_mid_row"><p>满舒克</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>徐梦圆</p></div>
+     		<div class="right4_mid_row"><p>S.H.E</p></div>
+     		<div class="right4_mid_row"><p>张国荣</p></div>
+     		<div class="right4_mid_row"><p>Eminem</p></div>
+     		<div class="right4_mid_row"><p>Martin Garrix</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>马良</p></div>
+     		<div class="right4_mid_row"><p>胡彦斌</p></div>
+     		<div class="right4_mid_row"><p>徐佳莹</p></div>
+     		<div class="right4_mid_row"><p>Higher Brothers</p></div>
+     		<div class="right4_mid_row"><p>Beyond</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>Troye Sivan</p></div>
+     		<div class="right4_mid_row"><p>买辣椒也用券</p></div>
+     		<div class="right4_mid_row"><p>阿涵</p></div>
+     		<div class="right4_mid_row"><p>米津玄師</p></div>
+     		<div class="right4_mid_row"><p>谢春花</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>汪苏泷</p></div>
+     		<div class="right4_mid_row"><p>张杰</p></div>
+     		<div class="right4_mid_row"><p>五月天</p></div>
+     		<div class="right4_mid_row"><p>Maroon 5</p></div>
+     		<div class="right4_mid_row"><p>周柏豪</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>曾惜</p></div>
+     		<div class="right4_mid_row"><p>Selena Gomez</p></div>
+     		<div class="right4_mid_row"><p>胡66</p></div>
+     		<div class="right4_mid_row"><p>杨宗纬</p></div>
+     		<div class="right4_mid_row"><p>Lil Ghost小鬼</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>阿肆</p></div>
+     		<div class="right4_mid_row"><p>Jony J</p></div>
+     		<div class="right4_mid_row"><p>Vicetone</p></div>
+     		<div class="right4_mid_row"><p>朴树</p></div>
+     		<div class="right4_mid_row"><p>张震岳</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>Imagine Dragons</p></div>
+     		<div class="right4_mid_row"><p>李志</p></div>
+     		<div class="right4_mid_row"><p>刘瑞琦</p></div>
+     		<div class="right4_mid_row"><p>Rihanna</p></div>
+     		<div class="right4_mid_row"><p>周杰伦</p></div>
+     	</div>
+     	
+     	<div class="right4_mid">
+     		<div class="right4_mid_row"><p>Two Steps From</p></div>
+     		<div class="right4_mid_row"><p>杨千嬅</p></div>
+     		<div class="right4_mid_row"><p>Bruno Mars</p></div>
+     		<div class="right4_mid_row"><p>陈硕子</p></div>
+     		<div class="right4_mid_row"><p>陈鸿宇</p></div>
+     	</div>
+     	
+     	
+     	
+    </div>
+    </div>
+    <!-- right4 end-->
+     </div>
+ <!-- right2 star-->
+  </div>
+	  <!-- right end-->
+	<div class="clear"></div>
+	
+	
+	
+	<!--尾部开始-->
+	<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5">
+						<div class="nav footerLeft">
+							<div class="copy">
+								<p class="link">
+									<a href="">关于橙子</a>
+									<span class="line">|</span>
+									<a href="">客户服务</a>
+									<span class="line">|</span>
+									<a href="">服务条款</a>
+									<span class="line">|</span>
+									<a href="">网站导航</a>
+									<span class="line">|</span>
+									<a href="">意见反馈</a>
+								</p>
+								<p class="font">
+									<span>网易公司版权所有©1997-2018</span>
+									<span>杭州乐读科技有限公司运营：</span>
+									<a>浙网文[2018]3506-263号</a>
+								</p>
+								<p class="font">
+									<span>违法和不良信息举报电话：0571-89853516</span>
+									<span>举报邮箱：</span>
+									<a>cloudmusicservice@163.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="nav footerRight">
+							<ul class="list">
+								<li>
+									<a href="">
+										<img src="img/cz01.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz02.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz03.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz04.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz05.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</footer>
+	
+	
+	
+	
+
+</body>
+</html>

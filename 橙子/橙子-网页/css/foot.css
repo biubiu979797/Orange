@@ -1,0 +1,99 @@
+/*底部代码开始*/
+
+.main-footer {
+	background: #F2F2F2;
+	font-size:12px;
+	border-top: 1px solid #D3D3D3;
+	
+}
+.main-footer .container{
+	min-height: 145px;
+}
+.main-footer .row {
+	margin-top: 22px;
+}
+
+.main-footer .link {
+	color: #999999;
+}
+.main-footer .line {
+	margin-left: 13px;
+	margin-right: 13px;
+}
+.main-footer .link a {
+	color: #999999;
+}
+.main-footer .link a:hover {
+	color: #999999; 
+}
+.main-footer .font {
+	width: 457px;
+	color: #666666;
+}
+.main-footer .font a {
+	color: #666666;
+}
+.main-footer .font a:hover {
+	color: #666666; 
+}
+.main-footer .footerLeft {
+	margin-top: 20px;
+	margin-left:62px ;
+}
+.main-footer .footerRight {
+	margin-top: 20px;
+	margin-left: 190px;
+}
+/*左边部分结束*/
+
+/*右边部分开始*/
+.main-footer .list {
+	margin-top: 6px;
+}
+
+.main-footer .list li {
+	display: inline-block;
+	margin-right: 27px;
+}
+/*右边部分结束*/
+
+/*音乐播放*/
+.main-footer .boxPlay {
+	width:100%;
+	height: 50px;
+	background: orangered;
+	position: fixed;
+}
+.main-footer .play {
+	position: relative;
+	background: black;
+}
+.main-footer .wrap {
+	width: 980px;
+	height: 47px;
+	left: 164px;
+	position: absolute;
+	
+}
+
+.main-footer .wrap #arrow,.wrap #down {
+	font-size: 30px;
+	
+}
+.main-footer .glyphicon {
+	font-size: 30px;
+	margin-top: 5px;
+	margin-left: 10px;
+	line-height: 47px;
+	margin-top: 1px;
+}
+.main-footer .foot_img {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	position: absolute;
+	left: 356px;
+	margin-top: 6px;
+	
+}
+

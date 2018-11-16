@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>歌单</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/three.css" />
+		<link rel="stylesheet" href="css/foot.css" />
+		<script type="text/javascript" src="js/three.js" ></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!--头部开始-->
+		<header>
+			<div class="collapse navbar-collapse">
+				<div class="clear"></div>
+				<div class="loge">
+					<a href="index.html"><img src="img/loge.jpg" /> </a>
+				</div>
+				<ul class="nav nav-tabs header-nav" id="list">
+					<li role="presentation">
+						<a href="index.html" aria-controls="home" role="tab" data-toggle="tab" target="_self">发现音乐</a>
+					</li>
+					<li role="presentation">
+						<a href="charts.html" aria-controls="排行榜" role="tab" data-toggle="tab" target="_self">排行榜</a>
+					</li>
+					<li role="presentation" class="active">
+						<a href="three.html" aria-controls="歌单" role="tab" data-toggle="tab" target="_self">歌单</a>
+					</li>
+					<li role="presentation">
+						<a href="four.html" aria-controls="主播电台" role="tab" data-toggle="tab" target="_self">主播电台</a>
+					</li>
+					<li role="presentation">
+						<a href="singer.html" aria-controls="歌手" role="tab" data-toggle="tab" target="_self">歌手</a>
+					</li>
+					<li role="presentation">
+						<a href="new.html" aria-controls="歌碟上架" role="tab" data-toggle="tab" target="_self">歌碟上架</a>
+					</li>
+					<li role="presentation">
+						<a href="shop.html" target="_self">商城</a>
+					</li>
+				</ul>
+				
+				
+			
+
+				<div class="col-sm-2 header-nav" id="so">
+					<div class="input-group">
+						<a href="#"><i class="icon-user"></i></a><input type="text" class="form-control" autofocus="autofocus" />
+
+					</div>
+				</div>
+				<ul class="nav navbar-nav navbar-right login">
+        <li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+        <li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">再次输入密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+			
+		</header>
+		<!--头部结束-->
+		
+		
+		<!--中间内容部分开始-->
+		<div id="contentbox">
+			<div class="container">
+				<div class="container_box">
+					<div class="container_wrap">
+						<div class="container_nav">
+							<div class="container_left">
+								<h2>全部</h2>
+								<select>
+									<option>选择类别</option>
+								</select>
+							</div>
+							<div class="container_right">
+								<a class="hot">
+									<p >热门</p>
+								</a>
+								<a class="new">
+									<p >最新</p>	
+								</a>
+								
+							</div>
+						</div>
+						<div class="container_img">
+							<div class="imgbox">
+								<a href="three01.html"><img src="http://p2.music.126.net/IQooheDuSML-8wqgO0wLLw==/109951163606639315.jpg?param=140y140" /></a>
+								<a class="font1" href="three01.html" >歌声叙述｜话不多先生的磨人爱情故事</a><br />	
+								<span>by</span>
+								<a class="font2" href="">紫萱Daylily</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/IqT72KmBYNt-gfC3JvQ2FA==/109951163605383336.jpg?param=140y140" />
+								<a class="font1" href="" >「低吟浅唱」温柔男嗓，开嗓亦可俘获芳心</a><br />	
+								<span>by</span>
+								<a class="font2" href="">Listening丶alone</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/tLdKyWenDVUK_l7U6Iz8vQ==/109951163602895944.jpg?param=140y140" />
+								<a class="font1" href="" >Hip Hop | 温柔的夜里，你是我最后的甜蜜</a><br />	
+								<span>by</span>
+								<a class="font2" href="">薛定谔的缝纫机</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/e8T2cTeBwXJ-2P9fJ3Vg-g==/109951163577443067.jpg?param=140y140" />
+								<a class="font1" href="" >「超甜慎点」你是舌尖上的跳跳糖</a><br />	
+								<span>by</span>
+								<a class="font2" href="">今夜与你虚度时光</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/LMVyjj5xEHQrbaAw-fK8yg==/109951163554080267.jpg?param=140y140" />
+								<a class="font1" href="" >有你在的夜晚。我将不再失眠。</a><br />	
+								<span>by</span>
+								<a class="font2" href="">竖爹</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="container_img">
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/PJSGJo2mzP-qJvG-EyltHQ==/109951163580871580.jpg?param=140y140" />
+								<a class="font1" href="" >『韩语』谢谢你昨晚来梦里看我</a><br />	
+								<span>by</span>
+								<a class="font2" href="">碳娜它妈</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/wsPS7l8JZ3EAOvlaJPWW-w==/109951163393967421.jpg?param=140y140" />
+								<a class="font1" href="" >2018上半年最热新歌TOP50</a><br />	
+								<span>by</span>
+								<a class="font2" href="">橙子音乐</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/wpahk9cQCDtdzJPE52EzJQ==/109951163271025942.jpg?param=140y140" />
+								<a class="font1" href="" >你的青春里有没有属于你的一首歌？</a><br />	
+								<span>by</span>
+								<a class="font2" href="">mayuko然</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/8TZecCv5K_yYMbeZ6gieFw==/19029247742518751.jpg?param=140y140" />
+								<a class="font1" href="" >耳朵喜欢你 好听到可以单曲循环</a><br />	
+								<span>by</span>
+								<a class="font2" href="">鹿白川</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/lZSsBdcR9xc4YK82MfYjYQ==/18637821604685232.jpg?param=140y140" />
+								<a class="font1" href="" >点起一支烟，听一首粤语歌</a><br />	
+								<span>by</span>
+								<a class="font2" href="">丑萌的猫</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="container_img">
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/7yf2kfPh7wlMGC-d-3AEsw==/109951163309396149.jpg?param=140y140" />
+								<a class="font1" href="" >〖纯音乐〗轻旋淡律，也可以抓住你的耳朵</a><br />	
+								<span>by</span>
+								<a class="font2" href="">羊驼idol</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/fR6GChtoT5QZao50O_BMcQ==/109951163311246502.jpg?param=140y140" />
+								<a class="font1" href="" >【经典】聼一首老歌，想念一段时光</a><br />	
+								<span>by</span>
+								<a class="font2" href="">Romantic丶Notes</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/r4dmNlYm0ApD1Afgdt7OtA==/109951163427654634.jpg?param=140y140" />
+								<a class="font1" href="" >电影中的钢琴曲｜最会讲故事³</a><br />	
+								<span>by</span>
+								<a class="font2" href="">下一颗巧克力</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/Op-a3I7Iy-amnSlzhVcWxw==/18814842976746273.jpg?param=140y140" />
+								<a class="font1" href="" >「高质量英文歌」让你单曲循环的英文歌</a><br />	
+								<span>by</span>
+								<a class="font2" href="">小番茄种植员啦啦</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/8BvBZSaI3SgEbRMVuQlKjQ==/109951163513812808.jpg?param=140y140" />
+								<a class="font1" href="" >失恋必听歌单 | 因为你突然听懂了很多歌</a><br />	
+								<span>by</span>
+								<a class="font2" href="">不如喜欢我-</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+						</div>
+						<div class="container_img">
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/CQDGeibcfkSHbbyjapNBmw==/109951163430714435.jpg?param=140y140" />
+								<a class="font1" href="" >单循辑｜我想和你共享耳机</a><br />	
+								<span>by</span>
+								<a class="font2" href="">名侦探-柯北</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/QaCIlALBDrwpoMsoEZk3_w==/109951163467878750.jpg?param=140y140" />
+								<a class="font1" href="" >海盐风味｜浪漫迷幻°新鲜度100%</a><br />	
+								<span>by</span>
+								<a class="font2" href="">猫头罐与六便士</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/EcMnmYYrnYbMHhjJKYDilQ==/109951163552988162.jpg?param=140y140" />
+								<a class="font1" href="" >【欧美翻唱】一首原唱，一首翻唱，即是神曲</a><br />	
+								<span>by</span>
+								<a class="font2" href="">绊爱酱</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/SzzzanwxizIQJ_62tpnhsg==/18985267277419410.jpg?param=140y140" />
+								<a class="font1" href="" >表白撩妹歌曲|你还害怕没有对象吗</a><br />	
+								<span>by</span>
+								<a class="font2" href="">宁遇夏</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/s6m3Fmn7b_5o0HSw0BUCrQ==/109951163543123626.jpg?param=140y140" />
+								<a class="font1" href="" >奶一口就迷上的欧美优质男嗓</a><br />	
+								<span>by</span>
+								<a class="font2" href="">懒狗欧美音乐</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="container_img">
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/m13zofgXFQWrLEOz9mKhcg==/109951163313795420.jpg?param=140y140" />
+								<a class="font1" href="" >予你情诗百首，余生你是我的所有</a><br />	
+								<span>by</span>
+								<a class="font2" href="">YouTube视频推荐</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/AqUHA2qnFUlyHw3iHdEY8Q==/109951163515900261.jpg?param=140y140" />
+								<a class="font1" href="" >『睡眠丧歌』希望低落会让你快乐</a><br />	
+								<span>by</span>
+								<a class="font2" href="">恩七不甜</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/lL25oxe0hffGMkS7eQaJLA==/109951163301136557.jpg?param=140y140" />
+								<a class="font1" href="" >后来你哭了，想安慰却忘了早已换了身份</a><br />	
+								<span>by</span>
+								<a class="font2" href="">DJ顾念晨</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/nxcktAp1jB921PaF8oesGw==/109951163588738861.jpg?param=140y140" />
+								<a class="font1" href="" >Hip-hop | 少女心狙击手</a><br />	
+								<span>by</span>
+								<a class="font2" href="">迟到情书</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/iuiXHUc58R6a5-WiJflLDw==/109951163429520064.jpg?param=140y140" />
+								<a class="font1" href="" >欧美对唱｜用最浪漫的副歌 你也轻轻的附和</a><br />	
+								<span>by</span>
+								<a class="font2" href="">今夜与你虚度时光</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="container_img">
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/SU6A6Wn6QMe1XK6ji3m-hQ==/18970973626241990.jpg?param=140y140" />
+								<a class="font1" href="" >【Future Bass】入耳即爱上的心动旋律</a><br />	
+								<span>by</span>
+								<a class="font2" href="">原点FM</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/A7llpK-DxGRc6LAMUjgT8w==/19052337486424281.jpg?param=140y140" />
+								<a class="font1" href="" >2「电子慢摇」陷入节奏的泥潭中</a><br />	
+								<span>by</span>
+								<a class="font2" href="">Quanjfic</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/pFLnEUj4kmGYuNMkJfCQPg==/19025949207652805.jpg?param=140y140" />
+								<a class="font1" href="" >风月无憾 | 你是我有关青春 最美的句读</a><br />	
+								<span>by</span>
+								<a class="font2" href="">外太空来的Mercy</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/Ik_2ud_6tUtfLi94LtupSQ==/109951163390002383.jpg?param=140y140" />
+								<a class="font1" href="" >暗恋始终是一个人的流离失所</a><br />	
+								<span>by</span>
+								<a class="font2" href="">-情殇雨夜-</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p2.music.126.net/B2RjM_mkyBxeDCS6OlwKyw==/109951163430806499.jpg?param=140y140" />
+								<a class="font1" href="" >香港乐坛女子图鉴（1983-2005）</a><br />	
+								<span>by</span>
+								<a class="font2" href="">浮世之舟</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="container_img">
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/kSwSzyFoDIXzJWYFLtMzxg==/109951163540224178.jpg?param=140y140" />
+								<a class="font1" href="" >心碎日语| 好想触碰你，好想见到你</a><br />	
+								<span>by</span>
+								<a class="font2" href="">莉犬</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/xjPkAMlcR-aQn_1Lx8b2Vw==/109951163443093546.jpg?param=140y140" />
+								<a class="font1" href="" >怀旧向||时光流转从前，人生如寄</a><br />	
+								<span>by</span>
+								<a class="font2" href="">不才之魂</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/qQrcy_7Bww53wTmTv3CR4A==/109951163622611216.jpg?param=140y140" />
+								<a class="font1" href="" >一首沦陷：Loen娱乐热歌精选</a><br />	
+								<span>by</span>
+								<a class="font2" href="">橙子音乐</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/tzPAeqa45vlbj8sGMk1F8w==/109951163393168087.jpg?param=140y140" />
+								<a class="font1" href="" >无前奏 | 喜欢无需铺垫 几秒就能沉醉</a><br />	
+								<span>by</span>
+								<a class="font2" href="">云音乐VIP</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+							<div class="imgbox">
+								<img src="http://p1.music.126.net/V_CLyOzwXJgfntPNVSyVtg==/18610333813873565.jpg?param=140y140" />
+								<a class="font1" href="" >青柠味复古 ✘ 凌步夏傍西海岸的空幻</a><br />	
+								<span>by</span>
+								<a class="font2" href="">X丶Greyen</a>
+								<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<div class="bottom">
+								<div class="bottom_icon">
+									<span id="icon" class="glyphicon glyphicon-headphones"></span> 98996
+								</div>	
+								<div class="bottom_play">
+									<a href=""><span id="play" class="glyphicon glyphicon-play-circle"></span></a>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		<!--中间内容部分结束-->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5">
+						<div class="nav footerLeft">
+							<div class="copy">
+								<p class="link">
+									<a href="">关于橙子</a>
+									<span class="line">|</span>
+									<a href="">客户服务</a>
+									<span class="line">|</span>
+									<a href="">服务条款</a>
+									<span class="line">|</span>
+									<a href="">网站导航</a>
+									<span class="line">|</span>
+									<a href="">意见反馈</a>
+								</p>
+								<p class="font">
+									<span>网易公司版权所有©1997-2018</span>
+									<span>杭州乐读科技有限公司运营：</span>
+									<a>浙网文[2018]3506-263号</a>
+								</p>
+								<p class="font">
+									<span>违法和不良信息举报电话：0571-89853516</span>
+									<span>举报邮箱：</span>
+									<a>cloudmusicservice@163.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="nav footerRight">
+							<ul class="list">
+								<li>
+									<a href="">
+										<img src="img/cz01.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz02.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz03.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz04.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz05.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+		</footer>
+		
+	</body>
+</html>

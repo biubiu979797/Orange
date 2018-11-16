@@ -1,0 +1,10 @@
+<!--pages/page5/page5.wxml-->
+
+<view class='countDown'><text style='color:red'>{{countDownNum}}</text></view>
+<view class='logo'>
+<image src='http://img02.store.sogou.com/app/a/10010016/f73b75a9007f0ca56ea1606fe704067f'></image>
+</view>
+
+<view class='tex'>
+<text>欢迎来到橙子音乐</text>
+</view>

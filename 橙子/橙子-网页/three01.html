@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>歌单第一页</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/three01.css" />
+		<link rel="stylesheet" href="css/foot.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!--头部开始-->
+		<header>
+			<div class="collapse navbar-collapse">
+				<div class="clear"></div>
+				<div class="loge">
+					<a href="index.html"><img src="img/loge.jpg" /> </a>
+				</div>
+				<ul class="nav nav-tabs header-nav" id="list">
+					<li role="presentation">
+						<a href="index.html" aria-controls="home" role="tab" data-toggle="tab" target="_self">发现音乐</a>
+					</li>
+					<li role="presentation">
+						<a href="charts.html" aria-controls="排行榜" role="tab" data-toggle="tab" target="_self">排行榜</a>
+					</li>
+					<li role="presentation" class="active">
+						<a href="three.html" aria-controls="歌单" role="tab" data-toggle="tab" target="_self">歌单</a>
+					</li>
+					<li role="presentation">
+						<a href="four.html" aria-controls="主播电台" role="tab" data-toggle="tab" target="_self">主播电台</a>
+					</li>
+					<li role="presentation">
+						<a href="singer.html" aria-controls="歌手" role="tab" data-toggle="tab" target="_self">歌手</a>
+					</li>
+					<li role="presentation">
+						<a href="new.html" aria-controls="歌碟上架" role="tab" data-toggle="tab" target="_self">歌碟上架</a>
+					</li>
+					<li role="presentation">
+						<a href="shop.html" target="_self">商城</a>
+					</li>
+				</ul>
+				
+				
+			
+
+				<div class="col-sm-2 header-nav" id="so">
+					<div class="input-group">
+						<a href="#"><i class="icon-user"></i></a><input type="text" class="form-control" autofocus="autofocus" />
+
+					</div>
+				</div>
+				<ul class="nav navbar-nav navbar-right login">
+        <li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+        <li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+    </ul>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">注册</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="6-15位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">再次输入密码</label>
+                                <input class="form-control" type="password" placeholder="至少6位字母或数字">
+                            </div>
+                            <div class="form-group">
+                                <label for="">邮箱</label>
+                                <input class="form-control" type="email" placeholder="例如:123@123.com">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center">登录</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                            <div class="form-group">
+                                <label for="">用户名</label>
+                                <input class="form-control" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">密码</label>
+                                <input class="form-control" type="password" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit">登录</button>
+                                <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                            </div>
+                            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+			
+		</header>
+		<!--头部结束-->
+		
+		
+		<div class="musicList">
+			<div class="container">
+				<div class="listContent">
+					<!--歌单左边部分开始-->
+					<div class="listContent1_left">
+						<div class="listLeft_nav">
+							<div class="navImg">
+								<img src="http://p3.music.126.net/h4fZ8Q8zp8h15azeWA6pIA==/109951163600511027.jpg?param=200y200"/>
+							</div>
+							<div class="navContent">
+								<div class="navContent1">
+									<div><span>歌单 ●</span></div>
+									<div><h3>人间惆怅客，话不投机半句多</h3></div>
+								</div>
+								<div class="navContent2">
+									<img src="http://p1.music.126.net/CEgTxFjuTmf-izfLbgz0hA==/109951163593124679.jpg?param=40y40"/>
+									<a href="">重复阿楼</a>
+									<span id="start" class="glyphicon glyphicon-star-empty"></span>
+									<span id="listfont">2018-10-02 创建</span>
+								</div>
+								<div class="navContent3">
+									<a href="" class="play">
+										<span class="glyphicon glyphicon-play-circle">播放</span>
+									</a>
+									<a href="" class="add">
+										<span class="glyphicon glyphicon-plus"></span>
+									</a>
+								</div>
+								<div class="navContent4">
+									<p>标签：
+										<a href="">话语</a>
+										<a href="">摇滚</a>
+										<a href="">民谣</a>
+									</p>
+									<p>介绍：在你眼前</p>
+									
+								</div>
+							</div>
+						</div>
+						<div class="playlist_nav">
+							<div class="playlist_nav1">
+								<div class="font1"><h3>歌曲列表</h3></div>
+								<div class="font2">28首歌曲</div>
+							</div>
+							<div class="playlist_nav2">
+								<span class="glyphicon glyphicon-music"></span>
+								<a href="">生成外链播放器</a>
+								<p>播放：<span class="num">147922</span>次</p>
+							</div>
+						</div>
+						<!--歌单列表开始-->
+						<div class="playlist">
+							<div class="playlist_content1">
+								<p>
+									<span class="font">biubiu</span>
+									<span class="font1">歌曲标题</span>
+									<span class="font2">时长</span>
+									<span class="font3">歌手</span>
+									<span class="font4">专辑</span>
+								</p>
+							</div>
+							<div class="playlist_content2">
+								<div class="font">
+									<span>1</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">我不希望你孤单的去面对整个喧哗世界</a>
+								</div>
+								<div class="font2">
+									<a href="">04:23</a>
+								</div>
+								<div class="font3">
+									<a href="">康姆士</a>
+								</div>
+								<div class="font4">
+									<a href="">你要如何，我们就如何</a>
+								</div>	
+							</div>
+							<div class="playlist_content3">
+								<div class="font">
+									<span>2</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">我还年轻 我还年轻 - (Teens Edge)</a>
+								</div>
+								<div class="font2">
+									<a href="">05:47</a>
+								</div>
+								<div class="font3">
+									<a href="">老王乐队</a>
+								</div>
+								<div class="font4">
+									<a href="">吾十有五而志于学</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>3</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">我还年轻 我还年轻 - (Teens Edge)</a>
+								</div>
+								<div class="font2">
+									<a href="">04:45</a>
+								</div>
+								<div class="font3">
+									<a href="">孔雀眼</a>
+								</div>
+								<div class="font4">
+									<a href="">『孔雀眼』首張同名迷你專輯</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>4</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">失踪人口 - (Missing You)</a>
+								</div>
+								<div class="font2">
+									<a href="">05:25</a>
+								</div>
+								<div class="font3">
+									<a href="">甜約翰 Sweet John</a>
+								</div>
+								<div class="font4">
+									<a href="">Dear</a>
+								</div>	
+							</div>
+							<div class="playlist_content2">
+								<div class="font">
+									<span>5</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">你要不要吃哈密瓜</a>
+								</div>
+								<div class="font2">
+									<a href="">04:28</a>
+								</div>
+								<div class="font3">
+									<a href="">告五人</a>
+								</div>
+								<div class="font4">
+									<a href="">迷雾之子</a>
+								</div>	
+							</div>
+							<div class="playlist_content3">
+								<div class="font">
+									<span>6</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">人间惆怅客</a>
+								</div>
+								<div class="font2">
+									<a href="">03:45</a>
+								</div>
+								<div class="font3">
+									<a href="">皇后皮箱</a>
+								</div>
+								<div class="font4">
+									<a href="">超时空歌女的快活</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>7</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>8</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>9</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>10</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>11</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>12</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>13</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>14</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>15</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>16</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>17</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>18</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>19</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>20</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>21</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>22</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content2">
+								<div class="font">
+									<span>23</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">以一种假装放荡的矜持　与你告别</a>
+								</div>
+								<div class="font2">
+									<a href="">06:00</a>
+								</div>
+								<div class="font3">
+									<a href="">茄子蛋</a>
+								</div>
+								<div class="font4">
+									<a href="">卡通人物</a>
+								</div>	
+							</div>
+							
+							<div class="playlist_content3">
+								<div class="font">
+									<span>24</span>
+									<a href="" id="icon" class="glyphicon glyphicon-play-circle"></a>
+								</div>
+								<div class="font1">
+									<a href="">Her November Diary</a>
+								</div>
+								<div class="font2">
+									<a href="">04:22</a>
+								</div>
+								<div class="font3">
+									<a href="">八厘米天空</a>
+								</div>
+								<div class="font4">
+									<a href="">Finders Keepers</a>
+								</div>	
+							</div>
+							
+						</div>
+						<!--歌单列表结束-->
+					</div>
+					<!--歌单左边部分结束-->
+					
+					<!--歌单右边部分开始-->
+					<div class="listContent1_rigth">
+						<div class="listRight">
+							<div class="listRight_nav">
+								<p><strong>喜欢这个歌单的人</strong></p>
+							</div>
+							<div class="listRight_img">
+								<div class="listRight_img1">
+									<div>
+										<a href="">
+											<img src="http://p1.music.126.net/0x24wTQCUmxKAImtqEYchg==/109951163512497027.jpg?param=40y40" />
+										</a>
+									</div>
+									<div>
+										<a href="">
+											<img src="http://p1.music.126.net/J_r5Xz1du__MvYGJniixHA==/109951163270006478.jpg?param=40y40" />
+										</a>
+									</div>
+									<div>
+										<a href="">
+											<img src="http://p1.music.126.net/A5gawJKLsFqIv2TVbknb-A==/109951163467950662.jpg?param=40y40" />
+										</a>
+									</div>
+									<div>
+										<a href="">
+											<img src="http://p1.music.126.net/sai8AiOpP0HZ70wtp5FZ2w==/19135900369866256.jpg?param=40y40" />
+										</a>
+									</div>
+								</div>
+								
+								<div class="listRight_img1">
+									<div>
+										<a href="">
+											<img src="http://p1.music.126.net/ofLb9jh1sbFNxU5EXM_fPg==/109951163352472178.jpg?param=40y40" />
+										</a>
+									</div>
+									<div>
+										<a href="">
+											<img src="http://p1.music.126.net/6eaD0-7Jdq8cql15oLKc4A==/109951163593303972.jpg?param=40y40" />
+										</a>
+									</div>
+									<div>
+										<a href="">
+											<img src="http://p1.music.126.net/6eaD0-7Jdq8cql15oLKc4A==/109951163593303972.jpg?param=40y40" />
+										</a>
+									</div>
+									<div>
+										<a href="">
+											<img src="http://p1.music.126.net/8Ja81HFw0ELVeJcWcJ1XDQ==/109951163578679759.jpg?param=40y40" />
+										</a>
+									</div>
+								</div>
+								
+							</div>
+							<!--listRight_img结束-->
+							
+							<div class="hotlist_nav">
+								<p><strong>热门歌单</strong></p>
+							</div>
+							<div class="hotlist">
+								<div class="hotlistbox">
+									<div class="hotlist_content">
+										<img src="http://p1.music.126.net/-H4NKtGZ7Zc3W6NuXmA50Q==/109951163598626242.jpg?param=50y50"/>
+										<div class="font">
+											<a class="font1" href="">妖行浮世绘 百鬼平安京</a><br />
+											<span> by</span>
+											<a class="font2" href="">最渣男友</a>
+											<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+										</div>
+									</div>
+									
+									<div class="hotlist_content">
+										<img src="http://p1.music.126.net/-H4NKtGZ7Zc3W6NuXmA50Q==/109951163598626242.jpg?param=50y50"/>
+										<div class="font">
+											<a class="font1" href="">妖行浮世绘 百鬼平安京</a><br />
+											<span> by</span>
+											<a class="font2" href="">最渣男友</a>
+											<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+										</div>
+									</div>
+									
+									<div class="hotlist_content">
+										<img src="http://p1.music.126.net/-H4NKtGZ7Zc3W6NuXmA50Q==/109951163598626242.jpg?param=50y50"/>
+										<div class="font">
+											<a class="font1" href="">妖行浮世绘 百鬼平安京</a><br />
+											<span> by</span>
+											<a class="font2" href="">最渣男友</a>
+											<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+										</div>
+									</div>
+									
+									<div class="hotlist_content">
+										<img src="http://p1.music.126.net/-H4NKtGZ7Zc3W6NuXmA50Q==/109951163598626242.jpg?param=50y50"/>
+										<div class="font">
+											<a class="font1" href="">妖行浮世绘 百鬼平安京</a><br />
+											<span> by</span>
+											<a class="font2" href="">最渣男友</a>
+											<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+										</div>
+									</div>
+									
+									<div class="hotlist_content">
+										<img src="http://p1.music.126.net/-H4NKtGZ7Zc3W6NuXmA50Q==/109951163598626242.jpg?param=50y50"/>
+										<div class="font">
+											<a class="font1" href="">妖行浮世绘 百鬼平安京</a><br />
+											<span> by</span>
+											<a class="font2" href="">最渣男友</a>
+											<span id="font3" class="glyphicon glyphicon-star-empty"></span>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--歌单右边部分结束-->
+				</div>
+			</div>
+		</div>
+		<!--内容部分结束-->
+		
+		<!--底部开始-->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5">
+						<div class="nav footerLeft">
+							<div class="copy">
+								<p class="link">
+									<a href="">关于橙子</a>
+									<span class="line">|</span>
+									<a href="">客户服务</a>
+									<span class="line">|</span>
+									<a href="">服务条款</a>
+									<span class="line">|</span>
+									<a href="">网站导航</a>
+									<span class="line">|</span>
+									<a href="">意见反馈</a>
+								</p>
+								<p class="font">
+									<span>网易公司版权所有©1997-2018</span>
+									<span>杭州乐读科技有限公司运营：</span>
+									<a>浙网文[2018]3506-263号</a>
+								</p>
+								<p class="font">
+									<span>违法和不良信息举报电话：0571-89853516</span>
+									<span>举报邮箱：</span>
+									<a>cloudmusicservice@163.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7">
+						<div class="nav footerRight">
+							<ul class="list">
+								<li>
+									<a href="">
+										<img src="img/cz01.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz02.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz03.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz04.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/cz05.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		<!--底部结束-->
+	</body>
+</html>

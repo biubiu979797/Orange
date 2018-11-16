@@ -1,0 +1,101 @@
+<!--pages/one/one.wxml-->
+<view class='header'>
+  <view class='hea header-1'>
+    <image src='../../icon1/cd.png'></image>
+  </view>
+  <view class='hea header-2'>
+    <image src='../../icon1/yy.png'></image>
+  </view>
+  <view class='hea header-3'>
+    <image bindtap='cc' src='../../icon1/cc.png'></image>
+  </view>
+  <view class='hea header-4'>
+    <image src='../../icon1/bbff.png'></image>
+  </view>
+  <icon class='hea header-5' type='search' color='white' size='24'></icon>
+</view>
+
+<view class='ff'>
+<view class='first-bg'></view>
+<view class='first'>
+  <image src='../img/p1.jpg'></image>
+  <text class='name'>XXX</text>
+  <text class='name1'>开通会员</text>
+</view>
+</view>
+
+<view class='title1' bindtap='onclick1'>
+
+<image src='../img/t1.png'></image>
+<text class='ben'>本地音乐</text>
+
+</view>
+<view class='title1'>
+
+<image src='../img/t2.png'></image>
+<text class='ben'>最近播放</text>
+
+</view>
+<view class='title1'>
+
+<image src='../img/t3.png'></image>
+<text class='ben'>下载管理</text>
+
+</view>
+<view class='title1'>
+
+<image src='../img/t4.png'></image>
+<text class='ben'>我的电台</text>
+
+</view>
+<view class='title1'>
+
+<image src='../img/t5.png'></image>
+<text class='ben'>我的收藏</text>
+
+</view>
+<view class='title1'>
+
+<image src='../img/t6.png'></image>
+<text class='ben'>Sati空间</text>
+
+</view>
+
+<view class='wo'>
+<image id="t13" src='../img/t13.png'></image>
+<text> 创建的歌单</text>
+<image id='t14' src='../img/t14.png'></image>
+
+
+</view>
+<view class='like' bindtap='onclick2'>
+<image id='t15' src='../img/t15.png'></image>
+<text>我喜欢的音乐</text>
+</view>
+
+<view class='like'>
+<image id='t15' src='../img/t16.png'></image>
+<text>电音</text>
+</view>
+
+
+<view class='wo'>
+<image id="t13" src='../img/t13.png'></image>
+<text> 收藏的歌单</text>
+<image id='t14' src='../img/t14.png'></image>
+</view>
+
+<view class='like'>
+<image id='t15' src='../img/t18.png'></image>
+<text>Faith(HHH317首歌)</text>
+</view>
+
+<view class='botton' bindtap='stop1'>
+<image class='t19' src='../img/t19.png'  bindtap='onclick3'></image>
+<text>空城计</text>
+
+<image class='t20' src='../img/t20.png'  bindtap='onclick4'></image>
+
+<image class='t21' src='../img/t21.png'></image>
+
+</view>

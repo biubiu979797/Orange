@@ -1,0 +1,28 @@
+/* pages/four/four.wxss */
+.t27{
+
+  width: 100%;
+  height: 1200rpx;
+}
+.t28{
+
+  width: 50rpx;
+  height: 50rpx;
+
+}
+
+.t29{
+
+  width: 50rpx;
+  height: 50rpx;
+
+}
+.four{
+  height: 50rpx;
+  background-color: #7C7A76
+}
+.four text{
+  margin-left: 324rpx;
+  font-size: 35rpx;
+  font-family: Arial, Helvetica, sans-serif
+}
